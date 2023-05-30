@@ -7,6 +7,7 @@ function App() {
       <h1>new Header</h1>
       <p>New article</p>
       <image>New image</image>
+      <p>New article</p>
     </div>
   );
 }
