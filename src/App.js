@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1>new Header</h1>
       <p>New article</p>
+      <h3>Under overskrift</h3>
       <image>New image</image>
     </div>
   );
