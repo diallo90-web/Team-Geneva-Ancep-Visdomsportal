@@ -10,6 +10,7 @@ function App() {
       <image>New image</image>
       <p>New article</p>
       <h1>Newer header</h1>
+      <p>Henriette er her</p>
     </div>
   );
 }
