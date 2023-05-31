@@ -11,6 +11,7 @@ function App() {
       <p>New article</p>
       <h1>Newer header</h1>
       <p>Henriette er her</p>
+      <p>heihei</p>
     </div>
   );
 }
