@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from "react-router-dom"
 import './locationBar.css';
 import logo from '../../../images/AncepLogo3.png'
 import hus from '../../../images/HusLogo.png'

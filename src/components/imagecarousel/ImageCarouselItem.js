@@ -1,6 +1,6 @@
 import './ImageCarouselItem.css';
 import { useState } from "react";
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
 import aktivisten from "../../images/Aktivisten.png";
 import filosofen from "../../images/Filosofen.png";
@@ -53,9 +53,11 @@ const CarouselItem = () => {
                         <img src={img} alt={img} />
                     </div>
                 ))}
-
             </Slider>
-            <h1 className="main-header">Næss' Visdomsportal</h1>
+            <div className="main-header">
+                <h1 className='header'>Næss' Visdomsportal</h1>
+                <h3>Velkommen til Arne Næss' Digitale Filosofibibliotek</h3>
+            </div>
             <div className="scroll-arrow">
                 <FaChevronDown />
             </div>

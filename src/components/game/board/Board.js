@@ -4,6 +4,7 @@ import Tile from "../tile/Tile";
 import { canSwap, shuffle, swap, isSolved } from "../help/helpers";
 import { BOARD_SIZE, GRID_SIZE, TILE_COUNT } from "../constants/constants";
 import "./Board.css"
+import LittleBtn from "../../shared/smallbutton/LittleBtn"
 
 const Board = ({imgUrl}) =>{
     const [tiles, setTiles] = useState([...Array(TILE_COUNT).keys()]);
@@ -66,8 +67,8 @@ const Board = ({imgUrl}) =>{
 
         {hasWon && isStarted && <div>Puzzle solved</div>}
         {!isStarted ?
-        (<button onClick={() => handleStartClick()}>Start</button>):
-        (<button onClick={() => handleShuffleClick()}>Restart</button>)
+        (<LittleBtn content={"Start"}  event={() => handleStartClick()}>Start</LittleBtn>):
+        (<LittleBtn content={"Restart"} event={() => handleShuffleClick()}>Restart</LittleBtn>)
         }
 
         {!isStarted && hasWon ?

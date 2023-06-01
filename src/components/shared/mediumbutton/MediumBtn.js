@@ -1,9 +1,9 @@
 import React from "react";
 import "./MediumBtn.css"
 
-const MediumBtn = () => {
+const MediumBtn = ({content, event}) => {
     return (
-        <button className="medium-btn">Medium Button</button>
+        < button onClick={event} className="medium-btn">{content}</button>
     );
  };
 

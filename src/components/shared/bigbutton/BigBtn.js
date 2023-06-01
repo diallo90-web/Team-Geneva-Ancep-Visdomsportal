@@ -1,9 +1,9 @@
 import React from "react";
 import "./BigBtn.css"
 
-const BigBtn = () => {
+const BigBtn = ({content, event}) => {
     return (
-        <button className="big-btn">Big Button</button>
+        <button onClick={event} className="big-btn">{content}</button>
     );
 };
 
