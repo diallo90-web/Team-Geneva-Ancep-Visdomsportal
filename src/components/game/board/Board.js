@@ -65,7 +65,7 @@ const Board = ({imgUrl}) =>{
 
         </ul>
 
-        {hasWon && isStarted && <div>Puzzle solved</div>}
+        {hasWon && isStarted && <div className="message">Puzzle solved</div>}
         {!isStarted ?
         (<LittleBtn content={"Start"}  event={() => handleStartClick()}>Start</LittleBtn>):
         (<LittleBtn content={"Restart"} event={() => handleShuffleClick()}>Restart</LittleBtn>)
@@ -73,7 +73,7 @@ const Board = ({imgUrl}) =>{
 
         {!isStarted && hasWon ?
         (<div></div>):
-        (<div>Klarer du å samle bilde?</div>)
+        (<div className="message">Klarer du å samle bildet?</div>)
         }
         </>
     )

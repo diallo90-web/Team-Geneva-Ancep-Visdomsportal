@@ -12,3 +12,7 @@
 button{
     display: block;
 }
+
+.message{
+    font-family: 'Lato', sans-serif;
+}
