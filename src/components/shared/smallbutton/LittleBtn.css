@@ -1,0 +1,22 @@
+.little-btn{
+    background-color: #D7ACC1;
+    height: 32px;
+    font-size: 14pt;
+    font-family: 'Lato', sans-serif;
+    padding: 18px 32px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.5s ease, background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    /*kun for å se størrelse, fjern når det tas i bruk:*/
+    margin: 20px 20px;
+}
+
+.little-btn:hover{
+    cursor: pointer;
+    background-color: #96608E;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+}
