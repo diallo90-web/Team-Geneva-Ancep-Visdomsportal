@@ -5,14 +5,29 @@ import "./YouTubePlayer.css"
 const YouTubePlayer = ({ videoId }) => {
     //options
     const opts = {
-        height: '390',
-        width: '640',
+        height: '440',
+        width: '690',
     };
     
       return( 
-        <div className="player">
-          <YouTube videoId={videoId} opts={opts} className="youtube-video"/>;
+        <div className="wrapper">
+          <div className="over-div">
+            <h3 className="video-header over">Fantasi...</h3>
+            <p className="over-video-text">Er en svært viktig del av det menneskelige. Dessverre er det mange som holder fantasien tilbake fordi de </p>
+            <p className="over-video-text">synes det er flaut. Det er synd, for det gjør livet deres fattigere.</p>
+
+          </div>
+          <div className="player">
+            <YouTube videoId={videoId} opts={opts} className="youtube-video"/>
+          </div>
+          <div className="under-div">
+            <h3 className="video-header under">Man glemmer...</h3>
+            <p className="under-video-text">Kanskje det beste ved å bli gammel, er at man glemmer. Selv kan jeg jo glede meg mange ganger over ting</p>
+            <p className="under-video-text">jeg glemmer og blir fortalt på nytt. Når min kone Kit Fai sier at morgen skal vi gå ut i skogen, blir jeg glad. Når</p>
+            <p className="under-video-text">jeg glemmer det, og hun gjentar det. Blir jeg glad på ny.</p>
+          </div>
         </div>
+        
       )
     };
     

@@ -13,13 +13,28 @@
 }
 
 .main-header {
-    position: fixed;
-    left: 3%;
-    top: 50%;
-    transform: translate(-3%, -45%);
+    display: flex;
+    transform: translate(3%, -130%);
     color: #C7B9A5;
-    font-size: 3vw;
+    font-size: calc(0.2rem + 1vw);
+    flex-direction: column;
+    align-items:start;
+    font-family: 'Overpass', sans-serif;
+    width: 50%;
 }
+
+.header {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 
 @media (max-width: 1300px) {
     .main-header {
@@ -77,7 +92,6 @@
 
 .scroll-arrow {
     display: flex;
-    margin-top: 3rem;
     justify-content: center;
     color: #6D6E71;
 }
