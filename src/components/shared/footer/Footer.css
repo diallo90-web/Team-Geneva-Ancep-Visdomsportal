@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+.footer{
+    background-color: #96608E;
+    bottom: 0;
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.icons-div svg{
+    margin: 40px;
+    color: #C7B9A5
+}
+
+.face, .insta, .twitter{
+    transition: color 0.3s ease;
+}
+
+.face:hover, .insta:hover, .twitter:hover{
+    color: black;
+}
+
+.link-div{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+    align-items: center;
+    margin-top: 35px;
+    font-size: 15pt;
+}
+
+.link-div a{
+    margin-bottom: 15px;
+}
+
+.faq, .about, .contact{
+    text-decoration: none;
+    color: #C7B9A5;
+    transition: color 0.3s ease;
+}
+
+.faq:hover, .about:hover, .contact:hover{
+    color: black;
+}
+
+.ancep{
+    margin-top: 8rem;
+    color: #C7B9A5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+.icon-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+  
+.icon-link svg {
+    pointer-events: auto;
+}
