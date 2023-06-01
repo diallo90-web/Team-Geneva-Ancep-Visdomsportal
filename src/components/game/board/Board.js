@@ -5,6 +5,8 @@ import { canSwap, shuffle, swap, isSolved } from "../help/helpers";
 import { BOARD_SIZE, GRID_SIZE, TILE_COUNT } from "../constants/constants";
 import "./Board.css"
 import LittleBtn from "../../shared/smallbutton/LittleBtn"
+import LittleBtnGhost from "../../shared/smallbuttonghost/LittleBtnGhost"
+
 
 const Board = ({imgUrl}) =>{
     const [tiles, setTiles] = useState([...Array(TILE_COUNT).keys()]);
@@ -65,11 +67,16 @@ const Board = ({imgUrl}) =>{
 
         </ul>
 
+        <div className="btn-wrapper">
+
         {hasWon && isStarted && <div className="message">Puzzle solved</div>}
         {!isStarted ?
         (<LittleBtn content={"Start"}  event={() => handleStartClick()}>Start</LittleBtn>):
         (<LittleBtn content={"Restart"} event={() => handleShuffleClick()}>Restart</LittleBtn>)
         }
+
+        <LittleBtnGhost content={"Flere spill"}></LittleBtnGhost>
+        </div>
 
         {!isStarted && hasWon ?
         (<div></div>):

@@ -16,3 +16,8 @@ button{
 .message{
     font-family: 'Lato', sans-serif;
 }
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+}
