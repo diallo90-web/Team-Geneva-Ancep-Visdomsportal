@@ -1,0 +1,13 @@
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+}
+  
+.youtube-video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto; 
+}
