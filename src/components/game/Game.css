@@ -1,0 +1,9 @@
+.game{
+    display: grid;
+    place-items: center;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: #f4f3f1;
+    border-radius: 10px;
+}
