@@ -14,11 +14,13 @@ function App() {
       <LocationBar/>
       <CarouselItem/>
       <div className='game-wrapper'>
-        <h3 className='game-header'>Oppdag, Undersøk, Utforrsk</h3>
-        <p className='game-p'>En verden av unendelige muligheter og 
-        grenseløs nysgjerrighet.<br/> Her inviteres du til å dykke ned i en reise gjennom kunnskapens dypeste daler 
+        <h3 className='game-header'>Oppdag, Undersøk, Utforsk</h3>
+        <p className='game-p'>En verden av uendelige muligheter og 
+        grenseløs nysgjerrighet.<br/></p> <p className='game-p'>Her inviteres du til å dykke ned i en reise gjennom kunnskapens dypeste daler 
         og filosofens høyeste tinder</p>
-        <Game/>
+        <div className='game-box'>
+        < Game/>
+        </div>
       </div>
       <div className='video-div'></div>
       <YouTubePlayer videoId={"GJz2zVW9WHM"}/>
