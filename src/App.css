@@ -1,6 +1,6 @@
 .game-wrapper{
   display: flex;
-  
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -10,16 +10,21 @@
     font-weight: 600;
     color: #C7B9A5;
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .game-p{
   text-align: center;
   font-family: 'Lato', sans-serif;
   color: #6d6e71;
-  margin-bottom: 30px;
+  margin: 10px;
+}
+
+.game-box{
+  margin-top: 25px;
 }
 
 .video-div{
   height: 100px;
 }
+

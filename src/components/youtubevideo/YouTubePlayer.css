@@ -25,11 +25,13 @@
 p {
     font-family: 'Lato', sans-serif;
     color: #6d6e71;
+    
 }
 
 .over-video-text{
     margin-top: 1px;
     margin-left: 50px;
+    font-style: italic;
 }
 
 .over-div {
@@ -52,6 +54,7 @@ p {
 .under-video-text {
     margin-bottom: 1px;
     margin-right: 50px;
+    font-style: italic;
 }
 
 .youtube-video {
@@ -59,4 +62,23 @@ p {
     max-height: 100%;
     width: 60%;
     height: auto; 
+}
+
+.quote-start{
+    color:#96608e ;
+    text-align: center;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quote-end{
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #96608e;
+    font-family:unset;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
