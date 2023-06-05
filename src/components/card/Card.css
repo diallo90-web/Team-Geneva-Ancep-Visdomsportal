@@ -1,0 +1,32 @@
+.card-wrapper{
+width: 100%;
+height: fit-content;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #f4f3f1;
+}
+
+
+.card-h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #C7B9A5;
+    font-size: calc(2em + 1em);
+    text-align: center;
+}
+
+.card-h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #C7B9A5;
+    font-size: calc(1.17em + 1em);
+    text-align: start;
+}
+
+.card-description{
+    font-family: 'Lato', sans-serif;
+    color: #6d6e71;
+    text-align: start;
+
+}
