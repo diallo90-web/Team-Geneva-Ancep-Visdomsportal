@@ -28,18 +28,22 @@
   align-items: start;
   justify-content: start;
 
-
 }
+
+.grid-container__item-card-wrapper {
+  grid-column: auto / span 12;
+  display: grid;
+  row-gap: 2rem;
+}
+
 
 .grid-container__item-video{
   grid-column: auto/ span 12;
-
 }
 
 
 .grid-container__item-card--video{
   grid-column: auto/ span 6;
-
 }
 
 .grid-container__item-card--video2{

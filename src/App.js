@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CarouselItem from './components/imagecarousel/ImageCarouselItem';
 import Game from "./components/game/Game"
@@ -6,6 +5,7 @@ import LocationBar from "./components/shared/locationbar/LocationBar"
 import Footer from "./components/shared/footer/Footer"
 import YouTubePlayer from "./components/youtubevideo/YouTubePlayer"
 import Card from "./components/card/Card"
+
 import LittleBtnGhost from "./components/shared/smallbuttonghost/LittleBtnGhost"
 function App() {
 
@@ -27,15 +27,17 @@ function App() {
           <LittleBtnGhost content={"Flere Spill"}/>
         </div>
   
-      <div className='grid-container__item-card--video'>
-        <Card title={videoTitleOne} description={"Er en svært viktig del av det menneskelige. Dessverre er det mange som holder fantasien tilbake fordi de synes det er flaut. Det er synd, for det gjør livet deres fattigere"} headingLevel={"h3"}/>
-      </div>
-      <div className='grid-container__item-video'>
-      <YouTubePlayer videoId={"GJz2zVW9WHM"}/>
-      </div>
-      <div className='grid-container__item-card--video2'>
-        <Card title={videoTitleTwo} description={  "Kanskje det beste ved å bli gammel, er at man glemmer. Selv kan jeg jo glede meg mange ganger over ting jeg glemmer og blir fortalt på nytt. Når min kone Kit Fai sier at morgen skal vi gå ut i skogen, blir jeg glad. Når jeg glemmer det, og hun gjentar det. Blir jeg glad på ny. "} headingLevel={"h3"}/>
-      </div>
+        <div className='grid-container__item-card-wrapper'>
+          <div className='grid-container__item-card--video'>
+            <Card title={videoTitleOne} description={"Er en svært viktig del av det menneskelige. Dessverre er det mange som holder fantasien tilbake fordi de synes det er flaut. Det er synd, for det gjør livet deres fattigere"} headingLevel={"h3"}/>
+          </div>
+          <div className='grid-container__item-video'>
+          <YouTubePlayer videoId={"GJz2zVW9WHM"}/>
+          </div>
+          <div className='grid-container__item-card--video2'>
+            <Card title={videoTitleTwo} description={  "Kanskje det beste ved å bli gammel, er at man glemmer. Selv kan jeg jo glede meg mange ganger over ting jeg glemmer og blir fortalt på nytt. Når min kone Kit Fai sier at morgen skal vi gå ut i skogen, blir jeg glad. Når jeg glemmer det, og hun gjentar det. Blir jeg glad på ny. "} headingLevel={"h3"}/>
+          </div>
+        </div>
       </div>
       
       <Footer/>
