@@ -74,12 +74,13 @@ const Board = ({imgUrl}) =>{
         (<LittleBtn content={"Start"}  event={() => handleStartClick()}>Start</LittleBtn>):
         (<LittleBtn content={"Restart"} event={() => handleShuffleClick()}>Restart</LittleBtn>)
         }
-        </div>
+        
 
         {!isStarted && hasWon ?
         (<div></div>):
         (<div className="message">Klarer du å samle bildet?</div>)
         }
+        </div>
         </>
     )
 }

@@ -9,10 +9,6 @@ const YouTubePlayer = ({ videoId }) => {
         width: '690',
     };
 
-    const videoTitleOne = "Fantasi..."
-    const videoTitleTw0 = "Man glemmer..."
-
-    
 
 
     
@@ -24,7 +20,6 @@ const YouTubePlayer = ({ videoId }) => {
           <div className="player">
             <YouTube videoId={videoId} opts={opts} className="youtube-video"/>
           </div>
-         
         </div>
         
       )

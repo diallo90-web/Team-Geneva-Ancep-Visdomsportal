@@ -5,13 +5,13 @@ const Card = ({title, description, headingLevel}) =>{
     const safeTitle = headingLevel? headingLevel.toLowerCase() : ""
     const Title = validTitleValues.includes(safeTitle) ? safeTitle : "h1"
 
-    const checkSize = Title == "h1" ? "card-h1" : "card-h3"
+    const checkHeader = Title === "h1" ? "card-h1" : "card-h3"
 
-    console.log(checkSize)
+    
     return(
         <div className="card-wrapper">
 
-            <Title className = {checkSize}>{title}</Title>
+            <Title className = {checkHeader}>{title}</Title>
 
             <p className="card-description">{description}</p>
 

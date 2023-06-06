@@ -1,0 +1,81 @@
+.quote-card-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f3f1;
+    /*
+    border: 1px solid black;
+    */
+    }
+    
+    
+    .quote-card-h1{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        color: #C7B9A5;
+        font-size: calc(2em + 1em);
+        text-align: center;
+    }
+    
+    .quote-card-h3{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        color: #C7B9A5;
+        font-size: calc(1.17em + 1em);
+        text-align: center;
+        /*
+        border: 1px solid black;
+        */
+    }
+    
+    .quote-card-description{
+        font-family: 'Lato', sans-serif;
+        color: #6d6e71;
+        text-align: start;
+        line-height: 1.8;
+        margin: 0;
+        max-width: 80%;
+    }
+
+    .block-quote{
+        background: #f4f3f1;
+        color: #D7ACC1;
+        padding: 20px;
+        padding-left: 50px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(#222222, 0.12);
+        position: relative;
+        overflow: hidden;
+        min-height: 120px;
+        margin: 0;
+        width: 100%;
+        /*
+        border: 1px solid black;
+        */
+        width: inherit;
+    }
+
+    blockquote::before{
+        font-family: Georgia, serif;
+        content: "“";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 5em;
+        color: rgba(#96608E, 0.8);
+        font-weight: normal;
+    }
+
+    blockquote::after{
+        font-family: Georgia, serif;
+        content: "”";
+        position: absolute;
+        bottom: -110px;
+        line-height: 100px;
+        right: -32px;
+        font-size: 25em;
+        color: rgba(#96608E, 0.8);
+        font-weight: normal;
+    }

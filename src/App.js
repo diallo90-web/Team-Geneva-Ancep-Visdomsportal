@@ -7,6 +7,7 @@ import Footer from "./components/shared/footer/Footer"
 import YouTubePlayer from "./components/youtubevideo/YouTubePlayer"
 import Card from "./components/card/Card"
 import LittleBtnGhost from "./components/shared/smallbuttonghost/LittleBtnGhost"
+import QuoteCard from "./components/quotecard/QuoteCard"
 function App() {
 
   const descriptionOne = "En verden av uendelige muligheter og grenseløs nysgjerrighet. Her inviteres du til å dykke ned i en reise gjennom kunnskapens dypeste daler og filosofens høyeste tinder"
