@@ -34,8 +34,10 @@
 }
 
 .container img {
-    width: 100%;
+    width: 47.5%;
+    opacity: 1;
     height: auto;
+    border-radius: 15px;
 }
 
 .container__close-button {
@@ -63,14 +65,18 @@
     font-size: xx-large;
     font-weight: 600;
     display: flex;
+    padding-top: 50px;
     align-items: center;
     justify-content: center;
-    opacity: 80%;
+    opacity: 0.88;
 }
 
 .container__text-p {
     padding: 10%;
+    padding-top: 10px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    opacity: 1;
 }
 
 .container__close-button:hover {

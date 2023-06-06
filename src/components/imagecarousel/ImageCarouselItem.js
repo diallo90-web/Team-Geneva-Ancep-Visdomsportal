@@ -1,16 +1,20 @@
 import './ImageCarouselItem.css';
+
 import { useState } from "react";
+import { FaChevronRight, FaChevronLeft, FaChevronDown } from "react-icons/fa";
+import { testArray } from './TextPopupArray';
+
 import Slider from 'react-slick';
 
 import ImagePopup from './ImagePopup';
 
+// Imported images
 import aktivisten from "../../images/Aktivisten.png";
 import filosofen from "../../images/Filosofen.png";
 import fjellklatreren from "../../images/Fjellklatreren.png";
 import nasjonsbyggeren from "../../images/Nasjonsbyggeren.png";
 import økosofen from "../../images/Økosofen.png";
 import professoren from "../../images/Professoren.png";
-import { FaChevronRight, FaChevronLeft, FaChevronDown } from "react-icons/fa";
 
 const images = [aktivisten, filosofen, fjellklatreren, nasjonsbyggeren, økosofen, professoren];
 
@@ -19,12 +23,11 @@ const CarouselItem = () => {
 
     const [imageIndex, setImageIndex] = useState(0);
 
-    // Bare for å sjekke om dette funker:
     const [showPopup, setShowPopup] = useState(false);
     const [popupText, setPopupText] = useState("");
-
-    const openImagePopup = (text) => {
-        setPopupText(text);
+    
+    const openImagePopup = (index) => {
+        setPopupText(testArray[index]);
         setShowPopup(true);
     };
 
@@ -64,13 +67,12 @@ const CarouselItem = () => {
         beforeChange: (current, next) => setImageIndex(next)
     };
 
-    const textArray = [];
 
     return (
         <div className="image-carousel">
             <Slider {...settings}>
                 {images.map((img, i) => (
-                    <div onClick={() => openImagePopup(img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
+                    <div onClick={() => openImagePopup(i, img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
                         <img src={img} alt={img} />
                     </div>
                 ))}
@@ -78,11 +80,6 @@ const CarouselItem = () => {
             <div className="main-header">
                 <h1 className='header'>Næss' Visdomsportal</h1>
                 <h3>Velkommen til Arne Næss' Digitale Filosofibibliotek</h3>
-                <ul>
-                {textArray.map((line, index) => (
-                    <li key={index}>{line}</li>
-                ))}
-                </ul>
             </div>
             <div className="scroll-arrow">
                 <FaChevronDown />
