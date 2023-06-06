@@ -64,7 +64,7 @@ const CarouselItem = () => {
         beforeChange: (current, next) => setImageIndex(next)
     };
 
-
+    const textArray = [];
 
     return (
         <div className="image-carousel">
