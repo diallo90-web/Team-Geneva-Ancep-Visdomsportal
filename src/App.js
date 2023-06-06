@@ -29,6 +29,7 @@ function App() {
           <Card title={titleOne} description={descriptionOne} headingLevel={"h3"}/>
           <LittleBtnGhost content={"Flere Spill"}/>
         </div>
+    </div>
   
         <div className='grid-container__item-card-wrapper'>
           <div className='grid-container__item-card--video'>
@@ -40,7 +41,7 @@ function App() {
           <div className='grid-container__item-card--video2'>
             <QuoteCardTwo title={videoTitleTwo} description={  "Kanskje det beste ved å bli gammel, er at man glemmer. Selv kan jeg jo glede meg mange ganger over ting jeg glemmer og blir fortalt på nytt. Når min kone Kit Fai sier at morgen skal vi gå ut i skogen, blir jeg glad. Når jeg glemmer det, og hun gjentar det. Blir jeg glad på ny. "} headingLevel={"h3"}/>
           </div>
-        </div>
+        
       </div>
       
       <Footer/>

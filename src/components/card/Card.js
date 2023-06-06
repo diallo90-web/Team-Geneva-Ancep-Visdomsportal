@@ -1,4 +1,5 @@
 import "./Card.css"
+import LittleBtnGhost from "../shared/smallbuttonghost/LittleBtnGhost"
 
 const Card = ({title, description, headingLevel}) =>{
     const validTitleValues = ["h1", "h3"]
@@ -14,8 +15,7 @@ const Card = ({title, description, headingLevel}) =>{
             <Title className = {checkHeader}>{title}</Title>
 
             <p className="card-description">{description}</p>
-
-
+            
         </div>
     )
 }
