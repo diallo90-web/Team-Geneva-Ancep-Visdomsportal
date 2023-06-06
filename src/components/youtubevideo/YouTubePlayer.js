@@ -24,7 +24,7 @@ const YouTubePlayer = ({ videoId }) => {
           <div className="player">
             <YouTube videoId={videoId} opts={opts} className="youtube-video"/>
           </div>
-         
+        
         </div>
         
       )
