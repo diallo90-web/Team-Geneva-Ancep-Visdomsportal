@@ -4,7 +4,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f4f3f1;
+    /*background-color: #f4f3f1;*/
+    border-radius: 10px;
+    padding-top: 25px;
+    background-color: rgba(199, 185, 165, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     /*
     border: 1px solid black;
     */
@@ -42,15 +46,15 @@
     }
 
     .block-quote{
-        background: #f4f3f1;
+        /*background: #f4f3f1;*/
         color: #D7ACC1;
         padding: 20px;
         padding-left: 50px;
         box-sizing: border-box;
-        box-shadow: 0 2px 4px rgba(#222222, 0.12);
+        /*box-shadow: 0 2px 4px rgba(#222222, 0.12);*/
         position: relative;
         /*For å kroppe den store quoten*/
-        /*overflow: hidden;*/
+        overflow: hidden;
         min-height: 120px;
         margin: 0;
         width: 100%;
@@ -67,7 +71,7 @@
         top: 10px;
         left: 10px;
         font-size: 5em;
-        color: rgba(#96608E, 0.8);
+        color: rgba(215, 172, 193, 0.3);
         font-weight: normal;
     }
 
@@ -79,6 +83,6 @@
         line-height: 100px;
         right: -32px;
         font-size: 25em;
-        color: rgba(#96608E, 0.8);
+        color: rgba(215, 172, 193, 0.3);
         font-weight: normal;
     }
