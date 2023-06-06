@@ -13,6 +13,7 @@ import Card from "./components/card/Card"
 
 import LittleBtnGhost from "./components/shared/smallbuttonghost/LittleBtnGhost"
 
+
 function App() {
 
   const descriptionOne = "En verden av uendelige muligheter og grenseløs nysgjerrighet. Her inviteres du til å dykke ned i en reise gjennom kunnskapens dypeste daler og filosofens høyeste tinder"
