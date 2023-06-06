@@ -1,4 +1,4 @@
-.quote-card-wrapper{
+.quote-card-two-wrapper{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -11,37 +11,38 @@
     }
     
     
-    .quote-card-h1{
+    .quote-card-two-h1{
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
         font-size: calc(2em + 1em);
-        text-align: start;
+        text-align: end;
+        margin-right: 50px;
     }
     
-    .quote-card-h3{
+    .quote-card-two-h3{
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
         font-size: calc(1.17em + 1em);
-        text-align: start;
-        margin-left: 50px;
+        text-align: end;
+        margin-right: 160px;
         /*
         border: 1px solid black;
         */
     }
     
-    .quote-card-description{
+    .quote-card-two-description{
         font-family: 'Lato', sans-serif;
         color: #6d6e71;
-        text-align: start;
+        text-align: end;
         line-height: 1.8;
         margin: 0;
         max-width: 80%;
         font-style: italic;
     }
 
-    .block-quote{
+    .block-quote-two{
         background: #f4f3f1;
         color: #D7ACC1;
         padding: 20px;
@@ -60,7 +61,7 @@
         width: inherit;
     }
 
-    .block-quote::before{
+    .block-quote-two::before{
         font-family: Georgia, serif;
         content: "“";
         position: absolute;
@@ -71,7 +72,7 @@
         font-weight: normal;
     }
 
-    .block-quote::after{
+    .block-quote-two::after{
         font-family: Georgia, serif;
         content: "”";
         position: absolute;
