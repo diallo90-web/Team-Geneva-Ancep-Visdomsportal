@@ -2,6 +2,10 @@ import './ImageCarouselItem.css';
 import { useState } from "react";
 import Slider from 'react-slick';
 
+
+import ImagePopup from './ImagePopup';
+
+
 import aktivisten from "../../images/Aktivisten.png";
 import filosofen from "../../images/Filosofen.png";
 import fjellklatreren from "../../images/Fjellklatreren.png";
@@ -14,6 +18,24 @@ const images = [aktivisten, filosofen, fjellklatreren, nasjonsbyggeren, økosofe
 
 
 const CarouselItem = () => {
+
+    const [imageIndex, setImageIndex] = useState(0);
+
+    // Bare for å sjekke om dette funker:
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupText, setPopupText] = useState("");
+
+    const openImagePopup = (text) => {
+        setPopupText(text);
+        setShowPopup(true);
+    };
+
+    const closeImagePopup = () => {
+        setShowPopup(false);
+        setPopupText("");
+    };
+
+
 
     const NextArrow = ({ onClick }) => {
         return (
@@ -31,7 +53,6 @@ const CarouselItem = () => {
         );
     };
 
-    const [imageIndex, setImageIndex] = useState(0);
 
     const settings = {
         infinite: true,
@@ -49,7 +70,7 @@ const CarouselItem = () => {
         <div className="image-carousel">
             <Slider {...settings}>
                 {images.map((img, i) => (
-                    <div className={i == imageIndex ? "slide activeSlide" : "slide"}>
+                    <div onClick={() => openImagePopup(img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
                         <img src={img} alt={img} />
                     </div>
                 ))}
@@ -61,6 +82,9 @@ const CarouselItem = () => {
             <div className="scroll-arrow">
                 <FaChevronDown />
             </div>
+            {showPopup && (
+                <ImagePopup text={popupText} onClose={closeImagePopup} />
+            )}
         </div>
     );
 };

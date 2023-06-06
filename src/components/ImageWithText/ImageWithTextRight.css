@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    align-items: center;
+  padding: 70px;
+}
+
+.image-conteiner{
+    flex: 1;
+    text-align: left;
+
+}
+
+
+
+.content-container{
+    flex: 0 0 50%;
+    padding: 0 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-wrapper{
+    background-color: #96608E;
+    height: 669px;
+    width: 545px;
+    display: inline-block;
+    padding: 5px;
+    right:0%; 
+   
+   
+
+}
+
+h1{
+    margin-bottom: 10px;
+    color: #C7B9A5;
+}
