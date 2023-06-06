@@ -2,9 +2,7 @@ import './ImageCarouselItem.css';
 import { useState } from "react";
 import Slider from 'react-slick';
 
-
 import ImagePopup from './ImagePopup';
-
 
 import aktivisten from "../../images/Aktivisten.png";
 import filosofen from "../../images/Filosofen.png";
@@ -66,6 +64,8 @@ const CarouselItem = () => {
         beforeChange: (current, next) => setImageIndex(next)
     };
 
+
+
     return (
         <div className="image-carousel">
             <Slider {...settings}>
@@ -78,6 +78,11 @@ const CarouselItem = () => {
             <div className="main-header">
                 <h1 className='header'>Næss' Visdomsportal</h1>
                 <h3>Velkommen til Arne Næss' Digitale Filosofibibliotek</h3>
+                <ul>
+                {textArray.map((line, index) => (
+                    <li key={index}>{line}</li>
+                ))}
+                </ul>
             </div>
             <div className="scroll-arrow">
                 <FaChevronDown />
