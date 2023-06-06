@@ -1,6 +1,7 @@
 .board{
     position: relative;
     padding:0;
+    margin: 0;
     border: 20px solid #96608e;
     border-radius: 10px;
     background-color: #f4f3f1;
@@ -11,4 +12,15 @@
 
 button{
     display: block;
+}
+
+.message{
+    font-family: 'Lato', sans-serif;
+    color: #6d6e71;
+}
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
