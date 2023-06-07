@@ -49,6 +49,7 @@ h3 {
 .slick-track {
     padding-top: 4rem;
     padding-bottom: 10rem;
+
 }
 
 
@@ -148,6 +149,7 @@ h3 {
 
     .slick-track {
         padding-bottom: 6rem;
+        transition: 800ms;
     }
 
     .main-header {
