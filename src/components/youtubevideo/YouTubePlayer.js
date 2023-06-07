@@ -9,7 +9,7 @@ const YouTubePlayer = ({ videoId }) => {
         width: '100%',
     };    
       return( 
-        <div className="wrapper">
+        <div className="youtube-wrapper">
           <div className="player">
             <YouTube videoId={videoId} opts={opts} className="youtube-video"/>
           </div>
