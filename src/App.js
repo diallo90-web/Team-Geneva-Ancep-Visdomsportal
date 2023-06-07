@@ -16,18 +16,27 @@ function App() {
   const titleOne = "Oppdag, Undersøk, Utforsk"
   const videoTitleOne = "Fantasi"
   const videoTitleTwo = "Man glemmer"
+  /*
+  <div className='grid-container__item-game'>
+          < Game/>
+        </div>
+
+         <Card title={titleOne} description={descriptionOne} headingLevel={"h3"}/>
+          <LittleBtnGhost content={"Flere Spill"}/>
+  */
   return (
     <div className="main-wrapper">
       <LocationBar/>
       <CarouselItem/>
       <div className='grid-container'>
-        <div className='grid-container__item-game'>
+      <div className='grid-container__item-game'>
           < Game/>
         </div>
 
         <div className='grid-container__item-card'>
-          <Card title={titleOne} description={descriptionOne} headingLevel={"h3"}/>
-          <LittleBtnGhost content={"Flere Spill"}/>
+        <Card title={titleOne} description={descriptionOne} headingLevel={"h3"}/>
+        <LittleBtnGhost content={"Flere Spill"}/>
+          
         </div>
     </div>
   

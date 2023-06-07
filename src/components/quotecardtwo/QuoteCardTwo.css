@@ -82,3 +82,201 @@
         color: rgba(215, 172, 193, 0.3);
         font-weight: normal;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .quote-card-two-h1{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            color: #C7B9A5;
+            font-size: calc(2em + 1em);
+            text-align: center;
+            margin-right: 50px;
+        }
+        
+        .quote-card-two-h3{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            color: #C7B9A5;
+            font-size: calc(1.17em + 1em);
+            text-align: center;
+            margin-right: 0;
+            /*
+            border: 1px solid black;
+            */
+        }
+
+        .quote-card-two-description{
+            font-family: 'Lato', sans-serif;
+            color: #6d6e71;
+            text-align: center;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 80%;
+            font-style: italic;
+        }
+
+        .block-quote-two::before{
+            font-family: Georgia, serif;
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 1vw;
+            font-size: 5em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    
+        .block-quote-two::after{
+            font-family: Georgia, serif;
+            content: "”";
+            position: absolute;
+            bottom: -110px;
+            line-height: 100px;
+            right: 0.3vw;
+            font-size: 25em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    }
+
+
+    @media screen and (min-width: 640px) and (max-width: 768px){
+        .quote-card-two-h3{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            color: #C7B9A5;
+            font-size: calc(1.17em + 1em);
+            text-align: center;
+            margin-right: 0;
+            /*
+            border: 1px solid black;
+            */
+        }
+
+        .quote-card-two-description{
+            font-family: 'Lato', sans-serif;
+            color: #6d6e71;
+            text-align: center;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 80%;
+            font-style: italic;
+        }
+
+        .block-quote-two::before{
+            font-family: Georgia, serif;
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 1vw;
+            font-size: 5em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    
+        .block-quote-two::after{
+            font-family: Georgia, serif;
+            content: "”";
+            position: absolute;
+            bottom: -110px;
+            line-height: 100px;
+            right: -3vw;
+            font-size: 25em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    }
+
+    @media screen  and (max-width: 640px){
+        .quote-card-two-h3{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            color: #C7B9A5;
+            font-size: calc(1.17em + 1em);
+            text-align: center;
+            margin-right: 0;
+            /*
+            border: 1px solid black;
+            */
+        }
+
+        .quote-card-two-description{
+            font-family: 'Lato', sans-serif;
+            color: #6d6e71;
+            text-align: center;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 80%;
+            font-style: italic;
+        }
+
+        .block-quote-two::before{
+            font-family: Georgia, serif;
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 1vw;
+            font-size: 5em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    
+        .block-quote-two::after{
+            font-family: Georgia, serif;
+            content: "”";
+            position: absolute;
+            bottom: -110px;
+            line-height: 100px;
+            right: -10vw;
+            font-size: 25em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    }
+
+    @media screen  and (max-width: 480px){
+        .quote-card-two-h3{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            color: #C7B9A5;
+            font-size: calc(1.17em + 1em);
+            text-align: center;
+            margin-right: 0;
+            /*
+            border: 1px solid black;
+            */
+        }
+
+        .quote-card-two-description{
+            font-family: 'Lato', sans-serif;
+            color: #6d6e71;
+            text-align: center;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 80%;
+            font-style: italic;
+        }
+
+        .block-quote-two::before{
+            font-family: Georgia, serif;
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 1vw;
+            font-size: 5em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    
+        .block-quote-two::after{
+            font-family: Georgia, serif;
+            content: "”";
+            position: absolute;
+            bottom: -110px;
+            line-height: 100px;
+            right: -10vw;
+            font-size: 25em;
+            color: rgba(215, 172, 193, 0.3);
+            font-weight: normal;
+        }
+    }
