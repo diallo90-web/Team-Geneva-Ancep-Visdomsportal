@@ -1,16 +1,28 @@
 .wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
 }
 
 .player{
     background-color: rgba(150,96,142, 0.2);
     padding: 35px;
     border-radius: 10px;
-    display: flex;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     align-items: center;
     justify-content: center;
+    display: flex;
+    width: 100%;
+    height: fit-content;
 }
 
-
-
+.youtube-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
