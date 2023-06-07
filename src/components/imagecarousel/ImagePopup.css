@@ -75,6 +75,7 @@
     padding: 10%;
     padding-top: 10px;
     text-align: center;
+    font-size: calc(1.7em - 1em);
     font-family: 'Lato', sans-serif;
     opacity: 1;
 }

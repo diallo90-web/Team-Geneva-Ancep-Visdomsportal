@@ -19,7 +19,7 @@ const professorenTxt =
         alder av 27 år. Arne Næss var en av Norges fremste forskere og æresmedlem i Vitenskapsakademiet.
     </>);
 
-const økosofenTxt =
+const okosofenTxt =
     (<>
         Arne Næss er regnet som dypøkologiens far, det var dette som gjorde han internasjonalt kjent.
         <p className="bold"> Dypøkologien tar utgangspunkt i at alt liv har en verdi i seg selv og ikke bare ut ifra hvilke nytte den har for mennesket. </p>
@@ -58,4 +58,5 @@ const aktivistenTxt =
 
 
 
-export const testArray = [aktivistenTxt, filosofenTxt, fjellklatrerenTxt, nasjonsbyggerenTxt, økosofenTxt, professorenTxt];
+export const testArray = [aktivistenTxt, filosofenTxt, fjellklatrerenTxt, nasjonsbyggerenTxt, okosofenTxt
+, professorenTxt];

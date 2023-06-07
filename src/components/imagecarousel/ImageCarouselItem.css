@@ -2,10 +2,10 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .image-carousel {
-    position: relative;
     width: 100%;
     height: 700px;
 }
+
 
 .slide img {
     width: 100%;
@@ -15,14 +15,15 @@
 
 .main-header {
     display: flex;
+    flex-direction: column;
+    align-items: start;
     transform: translate(3%, -130%);
     color: #C7B9A5;
     font-size: calc(0.2rem + 1vw);
-    flex-direction: column;
-    align-items:start;
     font-family: 'Overpass', sans-serif;
     width: 50%;
 }
+
 
 .header {
     padding: 0;
@@ -37,30 +38,9 @@ h3 {
 }
 
 
-@media (max-width: 1300px) {
-    .main-header {
-        top: 40%;
-        left: 3%;
-    }
-}
-@media (max-width: 1000px) {
-    .main-header {
-        top: 35%;
-        left: 3%;
-    }
-}
-@media (max-width: 700px) {
-    .main-header {
-        top: 30%;
-        left: 3%;
-    }
-}
-
 
 .slick-list {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    box-shadow: 0 5px 10px -8px black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     margin: 0;
     background-color: #F4F3F1;
 }
@@ -69,6 +49,7 @@ h3 {
     padding-top: 4rem;
     padding-bottom: 10rem;
 }
+
 
 
 .slide {
@@ -141,18 +122,33 @@ h3 {
     align-items: center;
 }
 
-@media (max-width: 1100px) {
-
+@media (max-width: 1050px) {
     .next,
     .prev {
         top: 33%;
     }
+
+    .image-carousel {
+        height: 600px;
+    }
 }
 
 @media (max-width: 768px) {
-
+    .image-carousel {
+        height: 400px;
+    }
+    
     .next,
     .prev {
-        top: 31%;
+        top: 40%;
+    }
+
+    .slick-track {
+        padding-bottom: 6rem;
+    }
+
+    .main-header {
+        transform: translate(50%, -130%);
+        align-items: center;
     }
 }
