@@ -1,17 +1,21 @@
-.quote-card-wrapper{
+.quote-card-frame-wrapper{
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f4f3f1;
+    /*background-color: #f4f3f1;*/
+    border-radius: 10px;
+    padding-top: 25px;
+    background-color: rgba(199, 185, 165, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     /*
     border: 1px solid black;
     */
     }
     
     
-    .quote-card-h1{
+    .quote-card-frame-h1{
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
@@ -19,7 +23,7 @@
         text-align: start;
     }
     
-    .quote-card-h3{
+    .quote-card-frame-h3{
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
@@ -31,7 +35,7 @@
         */
     }
     
-    .quote-card-description{
+    .quote-card-frame-description{
         font-family: 'Lato', sans-serif;
         color: #6d6e71;
         text-align: start;
@@ -41,7 +45,7 @@
         font-style: italic;
     }
 
-    .block-quote{
+    .block-quote-frame{
         /*background: #f4f3f1;*/
         color: #D7ACC1;
         padding: 20px;
@@ -50,7 +54,7 @@
         /*box-shadow: 0 2px 4px rgba(#222222, 0.12);*/
         position: relative;
         /*For å kroppe den store quoten*/
-        /*overflow: hidden;*/
+        overflow: hidden;
         min-height: 120px;
         margin: 0;
         width: 100%;
@@ -60,7 +64,7 @@
         width: inherit;
     }
 
-    .block-quote::before{
+    .block-quote-frame::before{
         font-family: Georgia, serif;
         content: "“";
         position: absolute;
@@ -71,7 +75,7 @@
         font-weight: normal;
     }
 
-    .block-quote::after{
+    .block-quote-frame::after{
         font-family: Georgia, serif;
         content: "”";
         position: absolute;
