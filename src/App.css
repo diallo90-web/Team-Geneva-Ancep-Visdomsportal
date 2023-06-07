@@ -14,6 +14,7 @@
   grid-column: auto/ span 6;
   display: flex;
   height: fit-content;
+  grid-row-start: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,6 +24,7 @@
 .grid-container__item-card{
   grid-column: auto/ span 6;
   height: 50vh;
+  grid-column-start: 7;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -55,12 +57,33 @@
 }
 
 /*tablet view*/
-@media screen and (min-width: 760px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 50px;
+    column-gap: 3rem;
+    row-gap: 1rem;
+  
+  }
  
   .grid-container__item-card{
-    grid-column: auto/ span 6;
+    grid-column: auto/ span 12;
     height: 50vh;
     display: flex;
+    grid-row-start: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .grid-container__item-game{
+    grid-column: auto/ span 12;
+    grid-row-start: 2;
+    display: flex;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -68,9 +91,21 @@
   }
 }
 /*in the middle*/
-@media screen and (min-width: 640px) and (max-width: 760px){
+@media screen and (min-width: 640px) and (max-width: 768px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 50px;
+    column-gap: 3rem;
+    row-gap: 1rem;
+  
+  }
+  
+  
+  
   .grid-container__item-card{
     grid-column: auto/ span 12;
+    grid-row-start: 1;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -80,6 +115,7 @@
 
     .grid-container__item-game{
       grid-column: auto/ span 12;
+      grid-row-start: 2;
       display: flex;
       height: fit-content;
       flex-direction: column;
@@ -92,8 +128,17 @@
 
   /*for mobile landscape view*/
   @media screen  and (max-width: 640px){
+    .grid-container{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      padding: 10px;
+      column-gap: 3rem;
+      row-gap: 1rem;
+    
+    }
     .grid-container__item-card{
     grid-column: auto/ span 12;
+    grid-row-start: 1;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -103,6 +148,7 @@
 
     .grid-container__item-game{
       grid-column: auto/ span 12;
+      grid-row-start: 2;
       display: flex;
       height: fit-content;
       flex-direction: column;

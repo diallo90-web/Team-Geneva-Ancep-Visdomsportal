@@ -5,16 +5,9 @@ import "./YouTubePlayer.css"
 const YouTubePlayer = ({ videoId }) => {
     //options
     const opts = {
-        height: '440',
-        width: '690',
-    };
-
-
-
-    
-        
-
-    
+        height: '100%',
+        width: '100%',
+    };    
       return( 
         <div className="wrapper">
           <div className="player">
