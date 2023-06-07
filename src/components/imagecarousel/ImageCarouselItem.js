@@ -79,7 +79,7 @@ const CarouselItem = () => {
             </Slider>
             <div className="main-header">
                 <h1 className='header'>Næss' Visdomsportal</h1>
-                <h3>Velkommen til Arne Næss' Digitale Filosofibibliotek</h3>
+                <h3 className='main-header__h3'>Velkommen til Arne Næss' Digitale Filosofibibliotek</h3>
             </div>
             <div className="scroll-arrow">
                 <FaChevronDown />
