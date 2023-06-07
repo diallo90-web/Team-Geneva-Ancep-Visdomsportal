@@ -4,6 +4,7 @@
 .image-carousel {
     width: 100%;
     height: 700px;
+    transition: 800ms;
 }
 
 
@@ -22,6 +23,7 @@
     font-size: calc(0.2rem + 1vw);
     font-family: 'Overpass', sans-serif;
     width: 50%;
+    transition: 800ms;
 }
 
 
@@ -36,7 +38,6 @@ h3 {
     margin: 0;
     color: #6D6E71;
 }
-
 
 
 .slick-list {
@@ -122,20 +123,22 @@ h3 {
     align-items: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1024px) {
     .next,
     .prev {
         top: 33%;
     }
 
     .image-carousel {
-        height: 600px;
+        height: 400px;
+        transition: 800ms;
     }
 }
 
 @media (max-width: 768px) {
     .image-carousel {
-        height: 400px;
+        height: 300px;
+        transition: 800ms;
     }
     
     .next,
@@ -150,5 +153,6 @@ h3 {
     .main-header {
         transform: translate(50%, -130%);
         align-items: center;
+        transition: 800ms;
     }
 }
