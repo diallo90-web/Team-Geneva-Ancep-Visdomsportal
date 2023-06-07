@@ -6,8 +6,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 23rem;
-    overflow: hidden;
 }
 
 .wrapper{
@@ -44,6 +42,7 @@
     align-items: center;
     margin-top: 35px;
     font-size: 15pt;
+    height: fit-content;
 }
 
 .link-div a{
@@ -79,7 +78,41 @@
     cursor: pointer;
     pointer-events: none;
 }
-  
+
 .icon-link svg {
     pointer-events: auto;
+}
+
+@media screen  and (max-width: 640px){
+    .link-div{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Overpass', sans-serif;
+        align-items: center;
+        margin-top: 35px;
+        font-size: 15pt;
+        height: fit-content;
+    }
+
+    .ancep{
+        margin-top: 6rem;
+        color: #C7B9A5;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 25pt;
+    }
+
+    .icons-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .link-div a{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
 }
