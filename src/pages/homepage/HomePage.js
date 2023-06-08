@@ -1,7 +1,5 @@
 import CarouselItem from '../../components/imagecarousel/ImageCarouselItem';
 import Game from "../../components/game/Game"
-import LocationBar from "../../components/shared/locationbar/LocationBar"
-import Footer from "../../components/shared/footer/Footer"
 import YouTubePlayer from "../../components/youtubevideo/YouTubePlayer"
 import Card from "../../components/card/Card"
 import LittleBtnGhost from "../../components/shared/smallbuttonghost/LittleBtnGhost"
@@ -15,17 +13,10 @@ const HomePage = () => {
     const titleOne = "Oppdag, Undersøk, Utforsk"
     const videoTitleOne = "Fantasi"
     const videoTitleTwo = "Man glemmer"
-    /*
-    <div className='grid-container__item-game'>
-            < Game/>
-          </div>
-  
-           <Card title={titleOne} description={descriptionOne} headingLevel={"h3"}/>
-            <LittleBtnGhost content={"Flere Spill"}/>
-    */
+
     return (
         <div className="main-wrapper">
-            <LocationBar />
+            
             <CarouselItem />
             <div className='grid-container'>
                 <div className='grid-container__item-game'>
@@ -35,7 +26,6 @@ const HomePage = () => {
                 <div className='grid-container__item-card'>
                     <Card title={titleOne} description={descriptionOne} headingLevel={"h3"} />
                     <LittleBtnGhost content={"Flere Spill"} />
-
                 </div>
             </div>
 
@@ -51,8 +41,6 @@ const HomePage = () => {
                 </div>
 
             </div>
-
-            <Footer />
         </div>
     );
 }
