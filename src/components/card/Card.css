@@ -31,6 +31,7 @@ padding: 0;
     color: #6d6e71;
     line-height: 1.8;
     display: inline;
+    font-size: 1rem;
 }
 
 
@@ -109,7 +110,7 @@ padding: 0;
     }
 
     .card-wrapper{
-        width: 50%;
+        width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;

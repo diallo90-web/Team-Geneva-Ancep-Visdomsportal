@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     height: 50vh;
+    
 }
 
 .wrapper{
@@ -14,6 +15,8 @@
     flex-direction: column;
     align-items: center;
     height: inherit;
+
+   
 }
 
 .icons-div{
@@ -117,3 +120,11 @@
     }
 
 }
+
+@media screen  and (max-width: 480px){
+
+    .icons-div svg{
+        margin: 30px;
+        color: #C7B9A5
+    }
+    }
