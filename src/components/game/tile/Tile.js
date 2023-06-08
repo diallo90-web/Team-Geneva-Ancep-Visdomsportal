@@ -1,12 +1,12 @@
 import React from "react";
 import {Motion, spring} from "react-motion"
 import { getMatrixPosition, getVisualPosition } from "../help/helpers";
-import { TILE_COUNT, GRID_SIZE, BOARD_SIZE } from "../constants/constants";
+import { TILE_COUNT, GRID_SIZE, BOARD_SIZE, BOARD_SIZE_SMALL } from "../constants/constants";
 import "./Tile.css"
 
 
 const Tile = (props) =>{
-    const{tile, index, width, height, handeTileClick, imgUrl} = props;
+    const{tile, index, width, height, handeTileClick, imgUrl, boardSize} = props;
     console.log("img in tile", imgUrl)
     const {row, col} = getMatrixPosition(index);
     const visualPos = getVisualPosition(row, col, width, height)
@@ -17,7 +17,7 @@ const Tile = (props) =>{
         translateX: visualPos.x,
         translateY: visualPos.y,
         backgroundImage: `url(${imgUrl})`,
-        backgroundSize: `${BOARD_SIZE}px`,
+        backgroundSize: `${boardSize}px`,
         backgroundPosition: `${(100 / (GRID_SIZE -1)) * (tile % GRID_SIZE )}% ${(100 / (GRID_SIZE -1)) * (Math.floor(tile / GRID_SIZE))}%`
     }
 

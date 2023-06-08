@@ -1,17 +1,28 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Tile from "../tile/Tile";
 import { canSwap, shuffle, swap, isSolved } from "../help/helpers";
-import { BOARD_SIZE, GRID_SIZE, TILE_COUNT } from "../constants/constants";
+import { BOARD_SIZE, BOARD_SIZE_SMALL, GRID_SIZE, TILE_COUNT } from "../constants/constants";
 import "./Board.css"
 import LittleBtn from "../../shared/smallbutton/LittleBtn"
-import LittleBtnGhost from "../../shared/smallbuttonghost/LittleBtnGhost"
 
 
 const Board = ({imgUrl}) =>{
     const [tiles, setTiles] = useState([...Array(TILE_COUNT).keys()]);
     const [isStarted, setIsStarted] = useState(false);
+    const [matches, setMatches] = useState(window.matchMedia("(min-width: 480px)").matches)
+    let boardSize;
+
     console.log("isStarted:", isStarted)
+
+    useEffect(()=>{
+        window
+            .matchMedia("(min-width: 480px)")
+            .addEventListener("change", e => setMatches(e.matches))
+
+    }, [])
+
+    
 
     const shuffleTiles = () =>{
         const shuffledTiles = shuffle(tiles)
@@ -38,13 +49,24 @@ const Board = ({imgUrl}) =>{
         setIsStarted(true)
     }
 
-    const pieceWidth = Math.round(BOARD_SIZE / GRID_SIZE)
-    const pieceHeight = Math.round(BOARD_SIZE / GRID_SIZE)
+    const handleBoardSize = () =>{
+        if(matches){
+            boardSize = BOARD_SIZE
+        }else{
+            boardSize = BOARD_SIZE_SMALL
+        }
+    }
+    handleBoardSize();
+    const pieceWidth = Math.round(boardSize / GRID_SIZE)
+    const pieceHeight = Math.round(boardSize / GRID_SIZE)
 
     const style ={
-        width: BOARD_SIZE,
-        height: BOARD_SIZE,
+        width: boardSize,
+        height: boardSize,
     };
+    
+
+    
 
     const hasWon = isSolved(tiles)
 
@@ -61,6 +83,7 @@ const Board = ({imgUrl}) =>{
                     width ={pieceWidth}
                     height = {pieceHeight}
                     handeTileClick = {handeTileClick}
+                    boardSize = {boardSize}
                 
                 />
             ))}
