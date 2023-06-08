@@ -1,10 +1,10 @@
-
+import Navigation from "../../components/navigation/Navigation";
 
 const NavigationPage = () => {
 
     return (
         <div>
-            <h1>NavigationPage</h1>
+            <Navigation/>
         </div>
     )
 
