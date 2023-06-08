@@ -7,6 +7,7 @@ import Brain from "@mui/icons-material/PsychologyAltOutlined"
 import { Button } from "@mui/material"
 import "./Test.css"
 import { useState } from "react"
+import CircleNav from "../circlebutton/CircleNav"
 
 
 
@@ -74,6 +75,7 @@ const Navigation = (props) =>{
         itemSize={5}
         radius={23}
         rotationAngleInclusive={false}
+        menuToggleElement={<CircleNav/>}
         onMenuToggle={()=>{
             setMenuPresses(true)
         }}
