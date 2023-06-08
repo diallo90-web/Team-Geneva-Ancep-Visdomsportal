@@ -17,7 +17,7 @@ const ImageWithTextLeft = () => {
 
         <div className="image-container-left">
           <div className="image-wrapper-left">
-            <img className='image-wrapper-left__img' src={arneLeft}/>
+            <img className='image-wrapper-left__img' src={arneLeft} alt={arneLeft}/>
           </div>
         </div>
       </div>
