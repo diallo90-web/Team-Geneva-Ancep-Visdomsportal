@@ -1,4 +1,4 @@
-import "./Card.css"
+import "./CardTwo.css"
 
 const CardTwo = ({title, description, headingLevel}) =>{
     const validTitleValues = ["h1", "h3"]
@@ -11,12 +11,10 @@ const CardTwo = ({title, description, headingLevel}) =>{
     console.log(checkSize)
     return(
         
-        <div className="card-wrapper">
+        <div className="card-two-wrapper">
             <Title className = {checkSize}>{title}</Title>
 
-            
-            { /* Endret på klassenavnet slik at jeg fikk sidestilt teksten til høyre */ }
-            <p className="card-description-two">{description}</p>
+            <p className="card-two-description">{description}</p>
 
 
         </div>

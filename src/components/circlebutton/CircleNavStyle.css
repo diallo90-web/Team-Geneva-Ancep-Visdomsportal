@@ -1,0 +1,30 @@
+.circle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #D7ACC1;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle-img {
+    width: 80%; 
+    height: auto;
+}
+
+.circle-text {
+    font-family: 'Lato', 'sans-serif';
+    position: relative;
+    color: #000; 
+    transition: color 0.3s ease-in-out;
+}
