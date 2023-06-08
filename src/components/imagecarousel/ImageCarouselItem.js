@@ -72,7 +72,7 @@ const CarouselItem = () => {
         <div className="image-carousel">
             <Slider {...settings}>
                 {images.map((img, i) => (
-                    <div onClick={() => openImagePopup(i, img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
+                    <div key={i} onClick={() => openImagePopup(i, img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
                         <img src={img} alt={img} />
                     </div>
                 ))}

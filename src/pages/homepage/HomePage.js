@@ -7,6 +7,8 @@ import QuoteCard from '../../components/quotecard/QuoteCard';
 import QuoteCardTwo from '../../components/quotecardtwo/QuoteCardTwo';
 import "./HomePage.css"
 
+import ImageWithTextLeft from '../../components/ImageWithText/ImageWithTextLeft';
+import ImageWithTextRight from '../../components/ImageWithText/ImageWithTextRight';
 
 const HomePage = () => {
     const descriptionOne = "En verden av uendelige muligheter og grenseløs nysgjerrighet. Her inviteres du til å dykke ned i en reise gjennom kunnskapens dypeste daler og filosofens høyeste tinder"
@@ -27,9 +29,16 @@ const HomePage = () => {
                 <div className='grid-container__item-card'>
                     <Card title={titleOne} description={descriptionOne} headingLevel={"h3"} />
                     <LittleBtnGhost content={"Flere Spill"} />
-
                 </div>
             </div>
+
+            {/* 
+                Disse ligger her foreløpig, men kan plasseres
+                i et grid system når de eventuelt blir ferdig utviklede 
+                interaktive komponenter (ImageWithTextLeft / Right)     */}
+            <ImageWithTextLeft/>
+            <ImageWithTextRight/>
+
 
             <div className='grid-container__item-card-wrapper'>
                 <div className='grid-container__item-card--video'>
