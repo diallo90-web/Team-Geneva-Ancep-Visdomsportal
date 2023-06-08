@@ -10,13 +10,8 @@ export const SearchResultsList = ({results}) => {
     {
         results.map((result,id) => {
             return <SearchResults result = {result} key={id}/>; 
-
         })
-
-
     }
-
-
 
     </div>
   )

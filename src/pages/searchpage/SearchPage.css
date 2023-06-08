@@ -1,0 +1,23 @@
+.search-page__container{
+    background-color:#F4F3F1;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.search-page__container-wrapper{
+    padding-top: 20vh;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    min-width: 200px;
+
+}
+
+.container-wrapper__h2{
+    font-size: 20px;
+    color: #C7B9A5;
+    padding-bottom: 15px;
+}

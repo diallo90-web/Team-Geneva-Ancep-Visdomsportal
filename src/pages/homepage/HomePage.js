@@ -13,7 +13,8 @@ const HomePage = () => {
     const titleOne = "Oppdag, Undersøk, Utforsk"
     const videoTitleOne = "Fantasi"
     const videoTitleTwo = "Man glemmer"
-
+    
+    
     return (
         <div className="main-wrapper">
             
@@ -26,6 +27,7 @@ const HomePage = () => {
                 <div className='grid-container__item-card'>
                     <Card title={titleOne} description={descriptionOne} headingLevel={"h3"} />
                     <LittleBtnGhost content={"Flere Spill"} />
+
                 </div>
             </div>
 
