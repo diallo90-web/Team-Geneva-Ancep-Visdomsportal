@@ -14,7 +14,7 @@ function LocationBar(){
                 <img className='logo' src ={logo} alt='logo'/>
             </div>
             <div className="navLinks">
-                <Link className="link" to="/Hjem"><img src={hus} className='houseLogo' alt='hjem logo'/>Hjem</Link>
+                <Link className="link" to="/"><img src={hus} className='houseLogo' alt='hjem logo'/>Hjem</Link>
                 <Link className="link" to="/Navigasjon"><img src={navigasjon} className='logoLeft' alt='navigasjon logo'/>Navigasjon</Link>
                 <Link className="link" to="/Fremgang"><img src={fremgang} className='logoLeft' alt='fremgang log'/>Fremgang</Link>
             </div>

@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <LocationBar/>
           <Routes>
-            <Route path='/Hjem' element={<HomePage/>}></Route>
+            <Route path='/' element={<HomePage/>}></Route>
             <Route path='/Navigasjon' element={<NavigationPage/>}></Route>
             <Route path='/Fremgang' element={<HomePage/>}></Route>
             <Route path='/Søk' element={<HomePage/>}></Route>
