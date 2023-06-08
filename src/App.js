@@ -5,7 +5,8 @@ import './App.css';
 
 import {
   HomePage,
-  NavigationPage
+  NavigationPage,
+  SearchPage
 
 } from "./pages"
 
@@ -19,7 +20,7 @@ function App() {
             <Route path='/' element={<HomePage/>}></Route>
             <Route path='/Navigasjon' element={<NavigationPage/>}></Route>
             <Route path='/Fremgang' element={<HomePage/>}></Route>
-            <Route path='/Søk' element={<HomePage/>}></Route>
+            <Route path='/Søk' element={<SearchPage/>}></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>
