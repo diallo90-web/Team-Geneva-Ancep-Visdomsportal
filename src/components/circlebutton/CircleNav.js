@@ -2,9 +2,11 @@ import React from 'react'
 import './CircleNavStyle.css'
 import BrainImage from "../../images/NavImg.png"
 
-const CircleComponent = ({imageSrc, altTxt, txt, onClick}) => {
+
+
+const CircleComponent = ({imageSrc, altTxt, txt, onClick, menuActive}) => {
     return( 
-        <div className='circle' onClick={onClick}>
+        <div style={{scale: menuActive? '' : '2.5'}} className={'circle' } onClick={onClick}>
             <img className='circle-img' src={BrainImage} alt={altTxt}/>
         </div>
     ); 

@@ -5,8 +5,9 @@
 
 .component-wrapper{
     margin-top: 300px;
-    height: 50vh;
+    height: fit-content;
     display: flex;
+    margin-bottom: 25vh;
     flex-direction: column;
     align-items:center;
     justify-content: first baseline;

@@ -6,7 +6,7 @@ import Photo from "@mui/icons-material/InsertPhotoOutlined"
 import Brain from "@mui/icons-material/PsychologyAltOutlined"
 import { Button } from "@mui/material"
 import "./Test.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import CircleNav from "../circlebutton/CircleNav"
 
 
@@ -18,9 +18,48 @@ const Navigation = (props) =>{
     const [hoverTwo, setHoverTwo] = useState(false)
     const [hoverThree, setHoverThree] = useState(false)
     const [hoverFour, setHoverFour] = useState(false)
-    const [menuPressed, setMenuPresses] = useState("")
+    const [menuPressed, setMenuPresses] = useState(false)
+    const [matches, setMatches] = useState(window.matchMedia("(min-width: 800px)").matches)
+    const [matchesTwo, setMatchesTwo] = useState(window.matchMedia("(min-width: 640px)").matches)
+    const [matchesThree, setMatchesThree] = useState(window.matchMedia("(min-width: 550px)").matches)
 
     props.func(menuPressed)
+
+
+    let menuSize;
+    /**
+     * Use react-media-hook
+     */
+
+
+    useEffect(()=>{
+        window
+            .matchMedia("(min-width: 800px)")
+            .addEventListener("change", e => setMatches(e.matches))
+        window
+            .matchMedia("(min-width: 640px)").addEventListener("change", e => setMatchesTwo(e.matches))
+        window
+            .matchMedia("(min-width: 550px)").addEventListener("change", e => setMatchesThree(e.matches))
+
+    }, [])
+
+
+    const handleMenuSize = () =>{
+        if(matches){
+            menuSize = 23
+    
+        }else if(matchesTwo){
+            menuSize = 18
+        }else if(matchesThree){
+            menuSize = 15
+        }else if(!matchesThree){
+            menuSize = 10
+        }
+    }
+
+    console.log("matches", matches.valueOf())
+
+    handleMenuSize()
 
 
     const handleMouseEnter = () =>{
@@ -70,14 +109,14 @@ const Navigation = (props) =>{
     return(
         <div className="navigation-wrapper">
         <CircleMenu className="mainMenu"
-        startAngle={200}
+        startAngle={202}
         rotationAngle={180}
         itemSize={5}
-        radius={23}
+        radius={menuSize}
         rotationAngleInclusive={false}
-        menuToggleElement={<CircleNav/>}
-        onMenuToggle={()=>{
-            setMenuPresses(true)
+        menuToggleElement={<CircleNav menuActive={menuPressed}/>}
+        onMenuToggle={(active)=>{
+            setMenuPresses(active)
         }}
         
 
