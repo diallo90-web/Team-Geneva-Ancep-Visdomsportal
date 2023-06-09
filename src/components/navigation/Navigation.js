@@ -71,7 +71,7 @@ const Navigation = (props) =>{
         }
         if(mobileScreen){
             menuRadius = 10
-            menuItemSize = 4
+            menuItemSize = 3
         }
     }
 
