@@ -8,7 +8,7 @@
     padding: 10px;
 }
 
-.headLineContainer,
+.headlineContainer,
 .searchLinkContainer {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
 .logo,
 .searchLogo {
     margin: 10px;
-    transition: filter 0.5s ease;
+    transition: filter 0.5s ease; 
 }
 
 .logo {
@@ -28,17 +28,17 @@
 
 .searchLogo {
     height: 25px;
-    transition: filter 0.5s ease;
+    transition: filter 0.5s ease; 
 }
 
 .logoLeft {
     height: 25px;
-    transition: filter 0.5s ease;
+    transition: filter 0.5s ease; 
 }
 
 .houseLogo {
     height: 33px;
-    transition: filter 0.5s ease;
+    transition: filter 0.5s ease; 
 }
 
 .navContainer {
@@ -66,16 +66,15 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    transition: 500ms ease;
-}
-
-
-.link:hover {
-    color: black;
-    filter: brightness(0);
+    transition: 0.5s ease;
 }
 
 .activeLink {
+    filter: brightness(0);
+    color: black;
+}
+
+.link:hover {
     color: black;
     filter: brightness(0);
 }
@@ -90,7 +89,7 @@
         padding: 0;
     }
 
-    .headLineContainer {
+    .headlineContainer {
         justify-content: flex-start;
         padding-left: 40px;
     }
