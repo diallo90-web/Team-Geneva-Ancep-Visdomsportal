@@ -1,0 +1,31 @@
+.text-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container__h1{
+    font-family: 'Overpass', sans-serif;
+    font-size: calc(1.17em + 1em);
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #C7B9A5;
+    text-align: center;
+}
+
+.text-container__p {
+    font-family: 'Lato', sans-serif;
+    color: #6d6e71;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1240px) {
+    .text-container__p{
+        width: 545px;
+    }
+}

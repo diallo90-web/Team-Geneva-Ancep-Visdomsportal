@@ -3,7 +3,7 @@ import './ImageWithTextLeft.css';
 import MediumBtn from '../shared/mediumbutton/MediumBtn';
 import arneLeft from "../../images/arne-right2.png"
 
-const ImageWithTextLeft = () => {
+const ImageWithTextLeft = ({title, description, imgSrc}) => {
     return (
       <div className="container-left">
         
