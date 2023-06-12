@@ -7,6 +7,8 @@ import Brain from "@mui/icons-material/PsychologyAltOutlined"
 import { Button } from "@mui/material"
 import "./Test.css"
 import { useState, useEffect } from "react"
+import { useMediaQuery } from "react-responsive";
+
 import CircleNav from "../circlebutton/CircleNav"
 
 
@@ -19,47 +21,62 @@ const Navigation = (props) =>{
     const [hoverThree, setHoverThree] = useState(false)
     const [hoverFour, setHoverFour] = useState(false)
     const [menuPressed, setMenuPresses] = useState(false)
-    const [matches, setMatches] = useState(window.matchMedia("(min-width: 800px)").matches)
-    const [matchesTwo, setMatchesTwo] = useState(window.matchMedia("(min-width: 640px)").matches)
-    const [matchesThree, setMatchesThree] = useState(window.matchMedia("(min-width: 550px)").matches)
+    const [width, setWidth] = useState(window.innerWidth + "px")
+    //const [menuRadius, setMenuRadius] = useState(23)
 
-    props.func(menuPressed)
+    const tabletScreen = useMediaQuery({query: '(max-width: 1024px)'})
 
+    const inBetweenScreen = useMediaQuery({query: '(max-width: 850px)'})
 
-    let menuSize;
-    /**
-     * Use react-media-hook
-     */
+    const smallTabletScreen = useMediaQuery({query: '(max-width: 768px)'})
+
+    const mobileScreenLandscape = useMediaQuery({query: '(max-width: 640px)'})
+
+    const mobileScreen = useMediaQuery({query: '(max-width: 480px)'})
+
+    const isLandscape = useMediaQuery({query: '(orientation: landscape)'})
+
+    const isPortrait = useMediaQuery({query: '(orientation: portrait)'})
+
+    let menuRadius = 23
+    let menuItemSize = 5
+    
+    
 
 
     useEffect(()=>{
-        window
-            .matchMedia("(min-width: 800px)")
-            .addEventListener("change", e => setMatches(e.matches))
-        window
-            .matchMedia("(min-width: 640px)").addEventListener("change", e => setMatchesTwo(e.matches))
-        window
-            .matchMedia("(min-width: 550px)").addEventListener("change", e => setMatchesThree(e.matches))
+        const handleResize = () =>{
+            setWidth(window.innerWidth + "px")
+        }
 
+        window.addEventListener('resize', handleResize)
     }, [])
-
-
-    const handleMenuSize = () =>{
-        if(matches){
-            menuSize = 23
     
-        }else if(matchesTwo){
-            menuSize = 18
-        }else if(matchesThree){
-            menuSize = 15
-        }else if(!matchesThree){
-            menuSize = 10
+
+    console.log("width", width)
+    console.log("menuRadius", menuRadius)
+    
+    props.func(menuPressed)
+
+
+    const handleQuery = () =>{
+        if(inBetweenScreen){
+            menuRadius = 18
+        }if(smallTabletScreen){
+            menuRadius = 15
+        }
+        if (mobileScreenLandscape){
+            menuRadius = 12
+            menuItemSize = 4
+        }
+        if(mobileScreen){
+            menuRadius = 10
+            menuItemSize = 3
         }
     }
 
-    console.log("matches", matches.valueOf())
 
-    handleMenuSize()
+
 
 
     const handleMouseEnter = () =>{
@@ -97,22 +114,13 @@ const Navigation = (props) =>{
 
     console.log(menuPressed)
 
-    const Menu = () => {
-        return(
-        <Button>
-            <Brain fontSize="large"/>
-        </Button>
-        
-        )
-        
-    }
     return(
-        <div className="navigation-wrapper">
-        <CircleMenu className="mainMenu"
+        <div onChange={handleQuery()} className="navigation-wrapper" >
+        <CircleMenu  className="mainMenu"
         startAngle={202}
         rotationAngle={180}
-        itemSize={5}
-        radius={menuSize}
+        itemSize={menuItemSize}
+        radius={menuRadius}
         rotationAngleInclusive={false}
         menuToggleElement={<CircleNav menuActive={menuPressed}/>}
         onMenuToggle={(active)=>{
