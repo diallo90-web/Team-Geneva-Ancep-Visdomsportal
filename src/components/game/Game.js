@@ -2,7 +2,7 @@ import "./Game.css"
 import Board from "./board/Board"
 import React from "react"
 import { useState, useEffect } from "react"
-import image from "../../images/arne-naess.jpeg"
+import image from "../../images/boksing.jpeg"
 
 
 

@@ -5,7 +5,7 @@ import MediumBtn from "../shared/mediumbutton/MediumBtn"
 
 import arneRight from "../../images/arne-left2.png"
 
-const ImageWithTextRight = () => {
+const ImageWithTextRight = ({title, description, imgSrc, imgAlt}) => {
   return (
     <div className="container-right">
 
