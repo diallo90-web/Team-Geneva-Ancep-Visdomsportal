@@ -18,12 +18,13 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    transform: translate(3%, -130%);
+    transform: translate(0%, -130%);
     color: #C7B9A5;
-    font-size: calc(0.2rem + 1vw);
+    font-size: calc(0.3rem + 1vw);
     font-family: 'Overpass', sans-serif;
-    width: 50%;
+    width: 100%;
     transition: 800ms;
+    margin-left: 20px;
 }
 
 
@@ -31,6 +32,8 @@
     padding: 0;
     margin: 0;
     font-weight: 600;
+    font-size: calc(1.17em + 1em);
+    
 }
 
 h3 {
@@ -90,11 +93,8 @@ h3 {
     opacity: 88%;
     border-radius: 100px;
     width: 3.5vw;
-    /* Adjust the value based on your preference */
     height: 3.5vw;
-    /* Adjust the value based on your preference */
     font-size: 1.5vw;
-    /* Adjust the value based on your preference */
 }
 
 .arrow svg {
@@ -107,7 +107,6 @@ h3 {
 }
 
 .next {
-    right: calc((100% - 35rem) / 2);
     right: 10%;
     display: flex;
     justify-content: center;
@@ -115,7 +114,6 @@ h3 {
 }
 
 .prev {
-    left: calc((100% - 35rem) / 2);
     left: 10%;
     display: flex;
     justify-content: center;
@@ -139,21 +137,36 @@ h3 {
         height: 400px;
         transition: 800ms;
     }
-    
+
     .next,
     .prev {
-        top: 40%;
+        top: 34.5%;
+    }
+
+    .slide {
+        border-radius: 7px;
+    }
+
+    .slide img {
+        border-radius: 7px;
+    }
+    
+    .arrow {
+        width: 5vw;
+        height: 5vw;
+        font-size: 2vw;
     }
 
     .slick-track {
-        padding-bottom: 6rem;
+        padding-bottom: 7rem;
         transition: 800ms;
     }
 
     .main-header {
-        transform: translate(50%, -130%);
         align-items: center;
         text-align: center;
+        font-size: calc(0.5rem + 1vw);
+
         transition: 800ms;
     }
 }

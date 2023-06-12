@@ -70,13 +70,15 @@ const CarouselItem = () => {
 
     return (
         <div className="image-carousel">
-            <Slider {...settings}>
-                {images.map((img, i) => (
-                    <div key={i} onClick={() => openImagePopup(i, img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
-                        <img src={img} alt={img} />
-                    </div>
-                ))}
-            </Slider>
+
+                <Slider {...settings}>
+                    {images.map((img, i) => (
+                        <div key={i} onClick={() => openImagePopup(i, img)} className={i == imageIndex ? "slide activeSlide" : "slide"}>
+                            <img src={img} alt={img} />
+                        </div>
+                    ))}
+                </Slider>
+
             <div className="main-header">
                 <h1 className='header'>Næss' Visdomsportal</h1>
                 <h3 className='main-header__h3'>Velkommen til Arne Næss' Digitale Filosofibibliotek</h3>

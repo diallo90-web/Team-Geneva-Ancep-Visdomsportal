@@ -8,7 +8,7 @@
     padding: 10px;
 }
 
-.headlineContainer,
+.headLineContainer,
 .searchLinkContainer {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
 .logo,
 .searchLogo {
     margin: 10px;
-    transition: filter 0.5s ease; 
+    transition: filter 0.5s ease;
 }
 
 .logo {
@@ -28,17 +28,17 @@
 
 .searchLogo {
     height: 25px;
-    transition: filter 0.5s ease; 
+    transition: filter 0.5s ease;
 }
 
 .logoLeft {
     height: 25px;
-    transition: filter 0.5s ease; 
+    transition: filter 0.5s ease;
 }
 
 .houseLogo {
     height: 33px;
-    transition: filter 0.5s ease; 
+    transition: filter 0.5s ease;
 }
 
 .navContainer {
@@ -66,24 +66,20 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    transition: color 0.5s ease;
+    transition: 500ms ease;
 }
+
 
 .link:hover {
     color: black;
-}
-
-.link:hover .logoLeft {
     filter: brightness(0);
 }
 
-.link:hover .houseLogo{
+.activeLink {
+    color: black;
     filter: brightness(0);
 }
 
-.link:hover .searchLogo{
-    filter: brightness(0);
-}
 
 @media (min-width: 907px) {
     .locationBar {
@@ -94,7 +90,7 @@
         padding: 0;
     }
 
-    .headlineContainer {
+    .headLineContainer {
         justify-content: flex-start;
         padding-left: 40px;
     }
