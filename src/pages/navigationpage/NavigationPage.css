@@ -1,14 +1,39 @@
 .navigation-page-wrapper{
-        height: fit-content;
+        height: 100%;
         text-align: center;
 }
 
 .component-wrapper{
-    margin-top: 300px;
+    margin-top: 250px;
     height: fit-content;
     display: flex;
-    margin-bottom: 25vh;
+    padding-bottom: 25vh;
     flex-direction: column;
     align-items:center;
-    justify-content: first baseline;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .component-wrapper{
+        margin-top: 250px;
+        padding-bottom: 25vh;
+    }
+
+    
+}
+@media screen and (max-width: 640px) {
+    .component-wrapper{
+        margin-top: 150px;
+        padding-bottom: 20vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .component-wrapper{
+        margin-top: 150px;
+        padding-bottom: 20vh;
+    }
 }

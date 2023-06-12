@@ -40,21 +40,9 @@ const Navigation = (props) =>{
 
     let menuRadius = 23
     let menuItemSize = 5
+    let iconSize = "large"
     
     
-
-
-    useEffect(()=>{
-        const handleResize = () =>{
-            setWidth(window.innerWidth + "px")
-        }
-
-        window.addEventListener('resize', handleResize)
-    }, [])
-    
-
-    console.log("width", width)
-    console.log("menuRadius", menuRadius)
     
     props.func(menuPressed)
 
@@ -63,14 +51,15 @@ const Navigation = (props) =>{
         if(inBetweenScreen){
             menuRadius = 18
         }if(smallTabletScreen){
-            menuRadius = 15
+            menuRadius = 18
         }
         if (mobileScreenLandscape){
             menuRadius = 12
             menuItemSize = 4
+            iconSize = "medium"
         }
         if(mobileScreen){
-            menuRadius = 10
+            menuRadius = 9.5
             menuItemSize = 3
         }
     }
@@ -140,7 +129,7 @@ const Navigation = (props) =>{
                 border: 'none'}}
         tooltip="Verk"
         tooltipPlacement={TooltipPlacement.Bottom}>
-        <Book fontSize="large" className="book"/>
+        <Book fontSize={iconSize} className="book"/>
 
         </CircleMenuItem>
 
@@ -154,7 +143,7 @@ const Navigation = (props) =>{
         tooltip="Lyd"
         tooltipPlacement={TooltipPlacement.Bottom}>
         
-        <Sound fontSize="large"/>
+        <Sound fontSize={iconSize}/>
 
         </CircleMenuItem>
 
@@ -165,7 +154,7 @@ const Navigation = (props) =>{
                 border: 'none'}}
         tooltip="Video"
         tooltipPlacement={TooltipPlacement.Bottom}>
-        <Video fontSize="large"/>
+        <Video fontSize={iconSize}/>
         </CircleMenuItem>
 
         <CircleMenuItem className="menu"
@@ -175,7 +164,7 @@ const Navigation = (props) =>{
                 border: 'none'}}
         tooltip="Bilde"
         tooltipPlacement={TooltipPlacement.Bottom}>
-        <Photo fontSize="large"/>
+        <Photo fontSize={iconSize}/>
 
         </CircleMenuItem>
 
