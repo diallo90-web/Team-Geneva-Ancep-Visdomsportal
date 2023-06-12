@@ -153,6 +153,7 @@ h3 {
     .main-header {
         transform: translate(50%, -130%);
         align-items: center;
+        text-align: center;
         transition: 800ms;
     }
 }
