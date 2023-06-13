@@ -14,21 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
- 
 }
 
-.player{
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
-    position: relative;
-    height: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .youtube-video{
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
     height: 0;
     position: absolute;
     top: 5%;
