@@ -14,7 +14,6 @@ const NavigationPage = () => {
 
     const mobileScreen = useMediaQuery({query: '(max-width: 480px)'})
 
-console.log(childData)
 
     return (
         <div className={"navigation-page-wrapper"}>

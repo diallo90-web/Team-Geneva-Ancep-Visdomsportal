@@ -1,5 +1,4 @@
 import "./Card.css"
-import LittleBtnGhost from "../shared/smallbuttonghost/LittleBtnGhost"
 
 const Card = ({title, description, headingLevel}) =>{
     const validTitleValues = ["h1", "h3"]

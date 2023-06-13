@@ -42,21 +42,14 @@
     }
 
     .block-quote{
-        /*background: #f4f3f1;*/
         color: #D7ACC1;
         padding: 20px;
         padding-left: 50px;
         box-sizing: border-box;
-        /*box-shadow: 0 2px 4px rgba(#222222, 0.12);*/
         position: relative;
-        /*For å kroppe den store quoten*/
-        /*overflow: hidden;*/
         min-height: 120px;
         margin: 0;
         width: 100%;
-        /*
-        border: 1px solid black;
-        */
         width: inherit;
     }
 
@@ -91,9 +84,6 @@
             font-size: calc(1.17em + 1em);
             text-align: center;
             margin-left: 0;
-            /*
-            border: 1px solid black;
-            */
         }
         
         .quote-card-description{
@@ -138,9 +128,6 @@
             font-size: calc(1.17em + 1em);
             text-align: center;
             margin-left: 0;
-            /*
-            border: 1px solid black;
-            */
         }
         
         .quote-card-description{
@@ -185,9 +172,6 @@
             font-size: calc(1.17em + 1em);
             text-align: center;
             margin-left: 0;
-            /*
-            border: 1px solid black;
-            */
         }
         
         .quote-card-description{
@@ -232,9 +216,6 @@
             font-size: calc(1.17em + 1em);
             text-align: center;
             margin-left: 0;
-            /*
-            border: 1px solid black;
-            */
         }
         
         .quote-card-description{

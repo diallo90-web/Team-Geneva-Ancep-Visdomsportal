@@ -3,10 +3,8 @@ import Book from "@mui/icons-material/MenuBookOutlined"
 import Sound from "@mui/icons-material/AudioFileOutlined"
 import Video from "@mui/icons-material/OndemandVideoOutlined"
 import Photo from "@mui/icons-material/InsertPhotoOutlined"
-import Brain from "@mui/icons-material/PsychologyAltOutlined"
-import { Button } from "@mui/material"
 import "./Test.css"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useMediaQuery } from "react-responsive";
 
 import CircleNav from "../circlebutton/CircleNav"
@@ -22,7 +20,6 @@ const Navigation = (props) =>{
     const [hoverFour, setHoverFour] = useState(false)
     const [menuPressed, setMenuPresses] = useState(false)
     const [width, setWidth] = useState(window.innerWidth + "px")
-    //const [menuRadius, setMenuRadius] = useState(23)
 
     const tabletScreen = useMediaQuery({query: '(max-width: 1024px)'})
 
