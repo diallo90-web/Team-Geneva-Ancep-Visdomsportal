@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const SubCategoryItem = ({imgUrl, title, description, link}) => {
 
 
-
     return (
         <Link to={link} className="sub-category-container">
             <div className="sub-category-container__img-wrapper">
