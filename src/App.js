@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {
   HomePage,
   NavigationPage,
-  SearchPage
+  SearchPage,
+  SubCategoryPage
 
 } from "./pages"
 
@@ -20,6 +21,7 @@ function App() {
             <Route path='/Navigasjon' element={<NavigationPage/>}></Route>
             <Route path='/Fremgang' element={<HomePage/>}></Route>
             <Route path='/Sok' element={<SearchPage/>}></Route>
+            <Route path='/Navigasjon/Verk' element={<SubCategoryPage/>}></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>
