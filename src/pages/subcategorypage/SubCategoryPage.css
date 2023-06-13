@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 15px;
-    height: 100vh;
 }
 
 .grid-item {
