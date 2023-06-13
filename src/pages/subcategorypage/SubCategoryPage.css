@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    height: 100vh;
+}
+
+.grid-item {
+    grid-column: auto/ span 6;
+    grid-row: auto / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid-item {
+        grid-column: auto / span 12;
+        grid-row: auto;
+    }
+}
