@@ -1,28 +1,74 @@
 .youtube-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    width: 100%;
+    width: 80%;
+    background-color: rgba(150,96,142, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .player{
-    background-color: rgba(150,96,142, 0.2);
-    padding: 35px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
+  
+ 
+}
+
+.player{
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+    position: relative;
+    height: 0;
     display: flex;
-    width: 100%;
-    height: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .youtube-video{
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+    height: 0;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) ;
+    width: 90%;
+    height: 90%;
 }
 
+@media screen and (max-width: 768px) {
+    .youtube-wrapper {
+        width: 100%;
+        background-color: rgba(150,96,142, 0.2);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .youtube-wrapper {
+        width: 100%;
+        background-color: unset;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding-top: unset;
+        border-radius: unset;
+        padding-bottom: unset;
+        
+        
+    }
+
+    .youtube-video{
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+        height: 0;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%) ;
+        width: 100%;
+        height: 100%;
+    }
+}

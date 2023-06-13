@@ -41,6 +41,31 @@
     transform: translateY(-50%);
 }
 
+@media (max-width: 768px){
+    .image-wrapper__green {
+        height: 557px;
+        width: 454px;
+    }
+
+    .image-wrapper__purple {
+        height: 557px;
+        width: 454px;
+    }
+}
+
+
+
+@media (max-width: 640px){
+    .image-wrapper__green {
+        height: 446px;
+        width: 363px;
+    }
+
+    .image-wrapper__purple {
+        height: 446px;
+        width: 363px;
+    }
+}
 
 
 
