@@ -45,7 +45,7 @@
     color: #6d6e71;
     font-size: 25px;
     margin-left: 25px;
-    margin-top: 4px;
+    margin-bottom: 2px;
     height: 100%;
     transition: 300ms;
 }
@@ -74,7 +74,6 @@
 
 
 
-
 @media screen and (min-width: 1024px){
     .sub-category-container{
         width: 70%;
@@ -91,12 +90,21 @@
         padding: 0;
     }
 
+    .description-wrapper__arrow {
+        content: "";
+        margin-left: 10px;
+        transition: margin-left 300ms; /* Add transition property */
+    }
+
     .sub-category-container{
         width: 80%;
     }
 
     .description-wrapper__h3 {
-        margin: 15  px 0 0 0;
+        margin: 15px 0 0; /* Remove the left margin and adjust top margin */
+        padding-left: 25px; /* Add padding instead of margin */
+
+        /*margin: 15px 0 0 20px;*/
     }
 
     .description-wrapper__p {
