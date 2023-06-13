@@ -3,7 +3,6 @@ import YouTube from 'react-youtube';
 import "./YouTubePlayer.css"
 
 const YouTubePlayer = ({ videoId }) => {
-    //options
     const opts = {
         height: '100%',
         width: '100%',

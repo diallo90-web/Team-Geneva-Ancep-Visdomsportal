@@ -6,21 +6,20 @@ import image from "../../images/boksing.jpeg"
 
 
 
-const Game = () =>{
+const Game = () => {
 
-    const[imgUrl, setImgUrl] = useState("")
+    const [imgUrl, setImgUrl] = useState("")
 
-    useEffect(() =>{
+    useEffect(() => {
         setImgUrl(image)
     }, [])
 
 
     return (
         <div className="game">
-            <Board imgUrl={imgUrl}/>
+            <Board imgUrl={imgUrl} />
         </div>
-        );
-    
+    );
 }
 
 export default Game

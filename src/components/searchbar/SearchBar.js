@@ -24,13 +24,8 @@ const handleChange =(value) => {
 }
 return ( 
 <div className="input-wrapper"> 
-<FaSearch id="search-icon" /> 
-<input placeholder=" Oppdag, Undersøk, Utforsk..." 
-value={input} 
-onChange ={(e)=> handleChange(e.target.value)}
-
-/>
-
+    <FaSearch id="search-icon" /> 
+    <input placeholder=" Oppdag, Undersøk, Utforsk..." value={input} onChange ={(e)=> handleChange(e.target.value)}/>
 </div>
 );
 }; 

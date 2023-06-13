@@ -1,6 +1,6 @@
 .youtube-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     width: 100%;

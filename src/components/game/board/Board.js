@@ -7,7 +7,7 @@ import "./Board.css"
 import LittleBtn from "../../shared/smallbutton/LittleBtn"
 
 
-const Board = ({imgUrl}) =>{
+const Board = ({ imgUrl }) => {
     const [tiles, setTiles] = useState([...Array(TILE_COUNT).keys()]);
     const [isStarted, setIsStarted] = useState(false);
     const [matches, setMatches] = useState(window.matchMedia("(min-width: 480px)").matches)
@@ -15,44 +15,44 @@ const Board = ({imgUrl}) =>{
 
     console.log("isStarted:", isStarted)
 
-    useEffect(()=>{
+    useEffect(() => {
         window
             .matchMedia("(min-width: 480px)")
             .addEventListener("change", e => setMatches(e.matches))
 
     }, [])
 
-    
 
-    const shuffleTiles = () =>{
+
+    const shuffleTiles = () => {
         const shuffledTiles = shuffle(tiles)
         setTiles(shuffledTiles)
     }
 
-    const swapTiles = (tileIndex) =>{
-        if(canSwap(tileIndex, tiles.indexOf(tiles.length -1))){
-            const swappedTiles = swap(tiles, tileIndex, tiles.indexOf(tiles.length -1))
+    const swapTiles = (tileIndex) => {
+        if (canSwap(tileIndex, tiles.indexOf(tiles.length - 1))) {
+            const swappedTiles = swap(tiles, tileIndex, tiles.indexOf(tiles.length - 1))
             setTiles(swappedTiles)
         }
     }
 
-    const handeTileClick = (index) =>{
+    const handeTileClick = (index) => {
         swapTiles(index)
     }
 
-    const handleShuffleClick = () =>{
+    const handleShuffleClick = () => {
         shuffleTiles()
     }
 
-    const handleStartClick = () =>{
+    const handleStartClick = () => {
         shuffleTiles()
         setIsStarted(true)
     }
 
-    const handleBoardSize = () =>{
-        if(matches){
+    const handleBoardSize = () => {
+        if (matches) {
             boardSize = BOARD_SIZE
-        }else{
+        } else {
             boardSize = BOARD_SIZE_SMALL
         }
     }
@@ -60,50 +60,49 @@ const Board = ({imgUrl}) =>{
     const pieceWidth = Math.round(boardSize / GRID_SIZE)
     const pieceHeight = Math.round(boardSize / GRID_SIZE)
 
-    const style ={
+    const style = {
         width: boardSize,
         height: boardSize,
     };
-    
 
-    
+
+
 
     const hasWon = isSolved(tiles)
 
 
-    return(
+    return (
         <>
-        <ul style={style} className="board">
-            {tiles.map((tile, index) =>(
-                <Tile
-                    key ={tile}
-                    index ={index}
-                    imgUrl = {imgUrl}
-                    tile = {tile}
-                    width ={pieceWidth}
-                    height = {pieceHeight}
-                    handeTileClick = {handeTileClick}
-                    boardSize = {boardSize}
-                
-                />
-            ))}
+            <ul style={style} className="board">
+                {tiles.map((tile, index) => (
+                    <Tile
+                        key={tile}
+                        index={index}
+                        imgUrl={imgUrl}
+                        tile={tile}
+                        width={pieceWidth}
+                        height={pieceHeight}
+                        handeTileClick={handeTileClick}
+                        boardSize={boardSize}
 
-        </ul>
+                    />
+                ))}
 
-        <div className="btn-wrapper">
+            </ul>
 
-        {hasWon && isStarted && <div className="message">Puzzle solved</div>}
-        {!isStarted ?
-        (<LittleBtn content={"Start"}  event={() => handleStartClick()}>Start</LittleBtn>):
-        (<LittleBtn content={"Restart"} event={() => handleShuffleClick()}>Restart</LittleBtn>)
-        }
-        
+            <div className="btn-wrapper">
 
-        {!isStarted && hasWon ?
-        (<div></div>):
-        (<div className="message">Klarer du å samle bildet?</div>)
-        }
-        </div>
+                {hasWon && isStarted && <div className="message">Puzzle solved</div>}
+                {!isStarted ?
+                    (<LittleBtn content={"Start"} event={() => handleStartClick()}>Start</LittleBtn>) :
+                    (<LittleBtn content={"Restart"} event={() => handleShuffleClick()}>Restart</LittleBtn>)
+                }
+
+                {!isStarted && hasWon ?
+                    (<div></div>) :
+                    (<div className="message">Klarer du å samle bildet?</div>)
+                }
+            </div>
         </>
     )
 }

@@ -7,8 +7,6 @@ import QuoteCard from '../../components/quotecard/QuoteCard';
 import QuoteCardTwo from '../../components/quotecardtwo/QuoteCardTwo';
 import "./HomePage.css"
 
-import ImageWithTextLeft from '../../components/ImageWithText/ImageWithTextLeft';
-import ImageWithTextRight from '../../components/ImageWithText/ImageWithTextRight';
 import Text from '../../components/ImageWithText/Text';
 import Image from '../../components/ImageWithText/Image';
 import arneRight from "../../images/arne-right2.png"
@@ -42,34 +40,36 @@ const HomePage = () => {
                     <Card title={titleOne} description={descriptionOne} headingLevel={"h3"} />
                     <LittleBtnGhost content={"Flere Spill"} />
                 </div>
+
                 <div className='grid-container__text--one'>
                     <Text title={titleImageOne} description={descriptionImageOne} btnText={btnTextImageOne}/>
                 </div>
+
                 <div className='grid-container__image--one'>
                     <Image imgSource={arneRight} backgroundColor={"green"} right={true}/>
                 </div>
+
                 <div className='grid-container__image--two'>
                     <Image imgSource={arneLeft} backgroundColor={"purple"} right={false}/>
                 </div>
+
                 <div className='grid-container__text--two'>
-                <Text title={titleImageTwo} description={descriptionImageTwo} btnText={btnTextImageTwo}/>
+                    <Text title={titleImageTwo} description={descriptionImageTwo} btnText={btnTextImageTwo}/>
                 </div>
             </div>
-
-        
-
 
             <div className='grid-container__item-card-wrapper'>
                 <div className='grid-container__item-card--video'>
                     <QuoteCard title={videoTitleOne} description={"Er en svært viktig del av det menneskelige. Dessverre er det mange som holder fantasien tilbake fordi de synes det er flaut. Det er synd, for det gjør livet deres fattigere"} headingLevel={"h3"} />
                 </div>
+
                 <div className='grid-container__item-video'>
                     <YouTubePlayer videoId={"GJz2zVW9WHM"} />
                 </div>
+                
                 <div className='grid-container__item-card--video2'>
                     <QuoteCardTwo title={videoTitleTwo} description={"Kanskje det beste ved å bli gammel, er at man glemmer. Selv kan jeg jo glede meg mange ganger over ting jeg glemmer og blir fortalt på nytt. Når min kone Kit Fai sier at morgen skal vi gå ut i skogen, blir jeg glad. Når jeg glemmer det, og hun gjentar det. Blir jeg glad på ny. "} headingLevel={"h3"} />
                 </div>
-
             </div>
         </div>
     );

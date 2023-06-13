@@ -1,7 +1,6 @@
 import Footer from './components/shared/footer/Footer';
 import LocationBar from './components/shared/locationbar/LocationBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
 
 import {
   HomePage,

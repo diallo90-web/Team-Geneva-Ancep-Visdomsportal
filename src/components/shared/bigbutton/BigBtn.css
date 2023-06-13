@@ -11,7 +11,6 @@
     transition: box-shadow 0.5s ease, background-color 0.5s ease;
     display: flex;
     align-items: center;
-    /*kun for å se størrelse, fjern når det tas i bruk:*/
     margin: 20px 20px;
 }
 

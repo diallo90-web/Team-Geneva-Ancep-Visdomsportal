@@ -1,5 +1,4 @@
 import "./Image.css"
-import arneLeft from "../../images/arne-right2.png"
 
 const Image = ({imgSource, imgAlt, backgroundColor, right}) =>{
 
@@ -8,7 +7,6 @@ const Image = ({imgSource, imgAlt, backgroundColor, right}) =>{
     const color = validColor.includes(safeColor) ? safeColor : "green"
 
     const checkColor = color === "green" ? "image-wrapper__green" : "image-wrapper__purple"
-
 
 
     return(
