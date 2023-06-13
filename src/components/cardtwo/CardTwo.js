@@ -8,7 +8,6 @@ const CardTwo = ({title, description, headingLevel}) =>{
     /* Endret på klassenavnet slik at jeg fikk sidestilt teksten til høyre */
     const checkSize = Title == "h1" ? "card-two-h1" : "card-two-h3"
 
-    console.log(checkSize)
     return(
         
         <div className="card-two-wrapper">

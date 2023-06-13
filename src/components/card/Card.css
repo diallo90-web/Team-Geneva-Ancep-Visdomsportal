@@ -1,14 +1,14 @@
-.card-wrapper{
-height: fit-content;
-display: flex;
-width: calc(inherit - 20%);
-flex-direction: column;
-justify-content: center;
-padding: 0;
+.card-wrapper {
+    height: fit-content;
+    display: flex;
+    width: calc(inherit - 20%);
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
 
-.card-h1{
+.card-h1 {
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
     width: 100%;
@@ -16,17 +16,15 @@ padding: 0;
     font-size: calc(2em + 1em);
 }
 
-.card-h3{
+.card-h3 {
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
     color: #C7B9A5;
     font-size: calc(1.17em + 1em);
-   
-   
 }
 
 
-.card-description{
+.card-description {
     font-family: 'Lato', sans-serif;
     color: #6d6e71;
     line-height: 1.8;
@@ -37,79 +35,78 @@ padding: 0;
 
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
-    .card-h3{
+    .card-h3 {
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
         font-size: calc(1.17em + 1em);
         text-align: center;
     }
-    
-    
-    .card-description{
+
+
+    .card-description {
         font-family: 'Lato', sans-serif;
         color: #6d6e71;
         text-align: center;
         line-height: 1.8;
     }
 
-    .card-wrapper{
+    .card-wrapper {
         height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        }
-
+    }
 }
 
 
-@media screen and (min-width: 640px) and (max-width: 768px){
-
-    .card-h3{
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    
+    .card-h3 {
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
         font-size: calc(1.17em + 1em);
         text-align: center;
     }
-    
-    
-    .card-description{
+
+
+    .card-description {
         font-family: 'Lato', sans-serif;
         color: #6d6e71;
         text-align: center;
         line-height: 1.8;
     }
 
-    .card-wrapper{
+    .card-wrapper {
         width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        }
+    }
 }
 
-@media screen  and (max-width: 640px){
-    .card-h3{
+@media screen and (max-width: 640px) {
+    .card-h3 {
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         color: #C7B9A5;
         font-size: calc(1.17em + 1em);
         text-align: center;
     }
-    
-    
-    .card-description{
+
+
+    .card-description {
         font-family: 'Lato', sans-serif;
         color: #6d6e71;
         text-align: center;
         line-height: 1.8;
     }
 
-    .card-wrapper{
+    .card-wrapper {
         width: 100%;
         height: fit-content;
         display: flex;
@@ -117,7 +114,5 @@ padding: 0;
         justify-content: center;
         align-items: center;
         margin: 0;
-        }
+    }
 }
-
-
