@@ -6,6 +6,7 @@ import Photo from "@mui/icons-material/InsertPhotoOutlined"
 import "./Test.css"
 import { useState } from "react"
 import { useMediaQuery } from "react-responsive";
+import { useNavigate} from "react-router-dom"
 
 import CircleNav from "../circlebutton/CircleNav"
 
@@ -13,6 +14,8 @@ import CircleNav from "../circlebutton/CircleNav"
 
 
 const Navigation = (props) =>{
+
+    const navigasjonRourter = useNavigate()
 
     const [hover, setHover] = useState(false)
     const [hoverTwo, setHoverTwo] = useState(false)
@@ -111,16 +114,14 @@ const Navigation = (props) =>{
         menuToggleElement={<CircleNav menuActive={menuPressed}/>}
         onMenuToggle={(active)=>{
             setMenuPresses(active)
-        }}
-        
+        }} >
 
         
-    
-        >
         <CircleMenuItem 
         onMouseEnter ={handleMouseEnter}
         onMouseLeave ={handleMouseLeave}
         className="menu"
+        onClick={() => navigasjonRourter('/Navigasjon/Verk')}
         
         style={{background: hover? '#96608e': '#d7acc1',
                 border: 'none'}}
@@ -129,7 +130,7 @@ const Navigation = (props) =>{
         <Book fontSize={iconSize} className="book"/>
 
         </CircleMenuItem>
-
+        
         <CircleMenuItem className="menu"
         onMouseEnter ={handleMouseEnterTwo}
         onMouseLeave ={handleMouseLeaveTwo}
