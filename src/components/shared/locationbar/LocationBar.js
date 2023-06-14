@@ -7,12 +7,17 @@ import fremgang from '../../../images/FremgangLogo.png';
 import navigasjon from '../../../images/NavigasjonLogo.png';
 import sok from '../../../images/SøkLogo.png';
 
+
 function LocationBar() {
     const location = useLocation();
 
     const isActiveLink = (pathname) => {
-        return location.pathname === pathname ? 'activeLink' : '';
+        if (pathname === '/'){
+            return location.pathname === '/' ? 'activeLink' : '';
+        }
+        return location.pathname.startsWith(pathname) || location.pathname === pathname ? 'activeLink' : '';
     };
+
 
     return (
         <nav className="locationBar">

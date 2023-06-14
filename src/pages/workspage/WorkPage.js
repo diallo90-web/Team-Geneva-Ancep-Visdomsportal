@@ -13,8 +13,8 @@ const WorkPage = () =>{
 
     return(
         <div className="work-wrapper">
-        <h1 className="work-header">Verk</h1>
-        <p className="work-description">Bla deg igjennom alle verkene til Arne Næss</p>
+        <h1 className="work-header">Tekster</h1>
+        <p className="work-description">Bla deg igjennom alle tekstene til Arne Næss</p>
         <div className='grid-container__work'>
       {titles.map((object)=>(
        
