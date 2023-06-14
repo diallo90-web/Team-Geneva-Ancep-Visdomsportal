@@ -4,6 +4,7 @@ import SearchPage from "./searchpage/SearchPage";
 import SubCategoryPage from "./subcategorypage/SubCategoryPage";
 import WorkPage from "./workspage/WorkPage";
 import SoundPage from "./soundpage/SoundPage";
+import VideoPage from "./videopage/VideoPage";
 
 export {
     HomePage,
@@ -11,5 +12,7 @@ export {
     SearchPage,
     SubCategoryPage,
     WorkPage,
-    SoundPage
+    SoundPage,
+    VideoPage
+    
 }
