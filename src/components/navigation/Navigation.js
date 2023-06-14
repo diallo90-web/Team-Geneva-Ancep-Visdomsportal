@@ -134,6 +134,7 @@ const Navigation = (props) =>{
         <CircleMenuItem className="menu"
         onMouseEnter ={handleMouseEnterTwo}
         onMouseLeave ={handleMouseLeaveTwo}
+        onClick={() => navigasjonRourter('/Navigasjon/Lyd')}
         style={{background: hoverTwo? '#96608e': '#d7acc1',
                 
                 border: 'none'}}
@@ -148,6 +149,7 @@ const Navigation = (props) =>{
         <CircleMenuItem className="menu"
         onMouseEnter ={handleMouseEnterThree}
         onMouseLeave ={handleMouseLeaveThree}
+        onClick={() => navigasjonRourter('/Navigasjon/Video')}
         style={{background: hoverThree? '#96608e': '#d7acc1',
                 border: 'none'}}
         tooltip="Video"
@@ -158,6 +160,7 @@ const Navigation = (props) =>{
         <CircleMenuItem className="menu"
         onMouseEnter ={handleMouseEnterFour}
         onMouseLeave ={handleMouseLeaveFour}
+        onClick={() => navigasjonRourter('/Navigasjon/Galleri')}
         style={{background: hoverFour? '#96608e': '#d7acc1',
                 border: 'none'}}
         tooltip="Bilde"
