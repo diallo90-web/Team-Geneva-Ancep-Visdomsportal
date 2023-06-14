@@ -9,7 +9,8 @@ import {
   SoundPage,
   SubCategoryPage,
   VideoPage,
-  WorkPage
+  WorkPage,
+  ImageGalleryPage
 
 } from "./pages"
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='Navigasjon/Verk/Tekster' element ={<WorkPage/>}></Route>
             <Route path='Navigasjon/Lyd' element = {<SoundPage/>}></Route>
             <Route path='Navigasjon/Video' element = {<VideoPage/>}></Route>
+            <Route path='Navigasjon/Galleri' element = {<ImageGalleryPage/>}></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>
