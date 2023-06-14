@@ -1,10 +1,10 @@
-.grid-container {
+.grid-container-cat {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 15px;
 }
 
-.grid-item {
+.grid-item-cat {
     grid-column: auto/ span 6;
     grid-row: auto / 3;
     display: flex;
