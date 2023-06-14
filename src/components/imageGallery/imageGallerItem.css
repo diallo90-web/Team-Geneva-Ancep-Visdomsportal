@@ -1,0 +1,24 @@
+
+.image-gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+
+.image-gallery-item{
+    max-width: 100%;
+    text-align: center;
+
+}
+.image-gallery_img{
+    max-width: 100%;
+    height: auto;
+  
+    transition: 500ms;
+    cursor: pointer;
+}
+
+
