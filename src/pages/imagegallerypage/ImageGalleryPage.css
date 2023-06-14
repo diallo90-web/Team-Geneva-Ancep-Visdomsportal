@@ -1,71 +1,51 @@
+.grid-container__gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 2rem;
+  padding: 5%;
+  column-gap: 2rem;
+}
 
+.grid-item__gallery-img {
+  grid-column: auto/ span 4;
+}
 
+.image-gallery__title {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: calc(2rem + 1rem);
+  text-align: center;
+  color: #C7B9A5;
+}
 
-
-.grid-container__gallery  {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    row-gap: 2rem;
-    padding: 5%;
-    column-gap: 2rem;
-  }
-  
-  .grid-item__gallery-img{
-    grid-column: auto/ span 4;
-  }
-  @media screen and (min-width: 1024px) {
-    .grid-item__gallery-img{
-      grid-column: auto/span 4;
-    }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .grid-item__gallery-img{
-      grid-column: auto/span 6;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .grid-item__gallery-img{
-      grid-column: auto/span 12;
-    }
-  
-    .grid-container__gallery{
-      display: grid;
-      grid-template-columns:repeat(12, minmax(0, 1fr));
-      column-gap: unset;
-      row-gap: 5rem;
-      padding: 5%;
-  }
-  }
-  
-  .image-gallery__title{
-    text-align: center;
-    color: #C7B9A5;
-    font-size: 60px;
-  }
-  
-  .grid-item__gallery-img:hover{
-    .image-gallery_img{
+.grid-item__gallery-img:hover {
+  .image-gallery_img {
     transform: scale(1.1);
-    
-   }
-  
-  
   }
-  
-  
-  
-  .App-link {
-    color: #61dafb;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-item__gallery-img {
+    grid-column: auto/span 4;
   }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-item__gallery-img {
+    grid-column: auto/span 6;
   }
-  
+}
+
+@media screen and (max-width: 768px) {
+  .grid-item__gallery-img {
+    grid-column: auto/span 12;
+  }
+
+  .grid-container__gallery {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: unset;
+    row-gap: 5rem;
+    padding: 5%;
+  }
+}

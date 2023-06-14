@@ -1,6 +1,6 @@
 import React from 'react';
-import "./App.css"
-import ImageGalleryItem from './ImageGalleryItem';
+import "./ImageGalleryPage.css";
+import ImageGalleryItem from '../../components/imageGallery/ImageGalleryItem';
 import myImage from "./myImages/arne1.jpg";
 import myImage2 from "./myImages/arne2.jpg";
 import myImage3 from "./myImages/arne3.jpg";
