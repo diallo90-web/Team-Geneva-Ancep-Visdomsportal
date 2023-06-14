@@ -1,0 +1,25 @@
+.sound-item__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rewind{
+    color: #D7ACC1;
+    transition: all 0.5s ease;
+}
+
+.forward{
+    color: #D7ACC1;
+    transition: all 0.5s ease;
+}
+
+.rewind:hover{
+    color: #96608E;
+    cursor: pointer;
+}
+
+.forward:hover{
+    color: #96608E;
+    cursor: pointer; 
+}
