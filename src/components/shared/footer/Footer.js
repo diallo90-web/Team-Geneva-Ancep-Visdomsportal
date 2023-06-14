@@ -10,7 +10,7 @@ const Footer = () => {
 
                 <div className="link-div">
                     <Link to="" className="faq">FAQ</Link>
-                    <Link to="" className="about">Om oss</Link>
+                    <Link to="https://ancep.no/om-ancep/" className="about">Om oss</Link>
                     <Link to="" className="contact">Kontakt oss</Link>
                 </div>
 
