@@ -42,14 +42,18 @@ import myImage38 from "./myImages/arne38.jpg";
 import myImage39 from "./myImages/arne39.jpg";
 import myImage40 from "./myImages/arne40.jpg";
 
-
+import { Link } from 'react-router-dom';
+import { FaChevronCircleLeft } from 'react-icons/fa';
 
 
 const ImageGalleryPage =() => {
 
   return (
-    <div>
-      <h1 className='image-gallery__title'> Bilde Galleri av Arne Næss</h1>
+    <div className='image-gallery__container'>
+      <Link className='image-gallery__back-arrow' to="/Navigasjon">
+        <FaChevronCircleLeft/>
+      </Link>
+      <h1 className='image-gallery__title'> Bilde Galleri</h1>
       <div className='grid-container__gallery'>
         <div className='grid-item__gallery-img'>
           <ImageGalleryItem ImgUrl={myImage} />

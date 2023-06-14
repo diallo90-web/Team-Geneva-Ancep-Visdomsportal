@@ -1,12 +1,19 @@
 import SubCategoryItem from "../../components/worksSubCategory/SubCategoryItem";
 import arneNaessBoker from "../../images/arnenæssbøker.png";
 import arneNaessTekster from "../../images/arnenæsstekster.png";
+import { Link } from "react-router-dom";
+import { FaChevronCircleLeft } from "react-icons/fa";
+
 import "./SubCategoryPage.css"
 
 const SubCategoryPage = () => {
     return (
         <div className='grid-container-cat'>
+            
             <div className="grid-container-cat__description">
+                <Link className="description__back-arrow" to="/Navigasjon">
+                    <FaChevronCircleLeft/>
+                </Link>
                 <h1 className="description__h1">Verk</h1>
                 <p className="description__p">Velg mellom Arne Næss' arkiverte bøker og tekster</p>
             </div>

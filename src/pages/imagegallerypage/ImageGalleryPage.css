@@ -1,3 +1,22 @@
+.image-gallery__container{
+  position: relative;
+}
+
+.image-gallery__back-arrow{
+  position: absolute;
+  font-size: 3rem;
+  color: #96608E;
+  transition: 300ms;
+  top: 0;
+  left: 2%;
+  opacity: 80%;
+}
+
+.image-gallery__back-arrow:hover{
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
 .grid-container__gallery {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -39,6 +58,10 @@
 @media screen and (max-width: 768px) {
   .grid-item__gallery-img {
     grid-column: auto/span 12;
+  }
+
+  .image-gallery__title{
+    padding: 0 20px 0 60px;
   }
 
   .grid-container__gallery {
