@@ -10,7 +10,8 @@ import {
   SubCategoryPage,
   VideoPage,
   WorkPage,
-  ImageGalleryPage
+  ImageGalleryPage,
+  BookPage
 
 } from "./pages"
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='Navigasjon/Lyd' element = {<SoundPage/>}></Route>
             <Route path='Navigasjon/Video' element = {<VideoPage/>}></Route>
             <Route path='Navigasjon/Galleri' element = {<ImageGalleryPage/>}></Route>
+            <Route path='Navigasjon/Verk/Boker' element = {<BookPage/>}></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>
