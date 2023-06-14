@@ -6,7 +6,7 @@ import "./SubCategoryPage.css"
 const SubCategoryPage = () => {
     return (
         <div className='grid-container-cat'>
-
+            
             <div className="grid-item-cat">
                 <SubCategoryItem link="/Navigasjon/Verk/Boker" imgUrl={arneNaessBoker} title="Bøker" description="Her finner du et rikt utvalg av bøker Arne Næss har skrevet." />
             </div>
