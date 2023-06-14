@@ -1,5 +1,20 @@
 .sound-page{
+    position: relative;
+}
 
+.sound-page__back-arrow {
+    position: absolute;
+    font-size: 3rem;
+    color: #96608E;
+    transition: 300ms;
+    top: -0.4%;
+    left: 2%;
+    opacity: 80%;
+}
+
+.sound-page__back-arrow:hover{
+    transform: scale(1.1);
+    opacity: 100%;
 }
 
 .sound-page__header{

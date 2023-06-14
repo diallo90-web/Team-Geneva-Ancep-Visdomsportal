@@ -1,6 +1,8 @@
 
 import VideoBox from "../../components/videobox/VideoBox"
 import "./VideoPage.css"
+import { Link } from "react-router-dom"
+import { FaChevronCircleLeft } from "react-icons/fa"
 
 
 const VideoPage = () =>{
@@ -12,7 +14,9 @@ const VideoPage = () =>{
 
     return(
         <div className="video-page">
-
+            <Link className="video-page__back-arrow" to="/Navigasjon">
+                <FaChevronCircleLeft/>
+            </Link>
             <h1 className="video-page__h1">Video</h1>
             <p className="video-page__p">Filmklipp av Arne Næss</p>
 

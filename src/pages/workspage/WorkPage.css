@@ -1,6 +1,22 @@
 .work-wrapper {
+    position: relative;
     box-sizing: unset;
     min-width: 0 auto;
+}
+
+.work__back-arrow {
+    position: absolute;
+    font-size: 3rem;
+    color: #96608E;
+    transition: 300ms;
+    top: -0.4%;
+    left: 2%;
+    opacity: 80%;
+}
+
+.work__back-arrow:hover{
+    transform: scale(1.1);
+    opacity: 100%;
 }
 
 .work-header{
