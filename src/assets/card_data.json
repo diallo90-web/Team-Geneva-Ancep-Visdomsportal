@@ -1,0 +1,71 @@
+
+
+{ "works":
+    [
+        {   "id": 1,
+            "title": "Deep Ecology and The Potters in our Planet",
+            "description": "Artikkelen 'Dypøkologi og keramikere på vår planet' av Arne Naess fra november 1992 vektlegger viktigheten av naturvern, bærekraft og skapelse av mangfoldige samfunn."
+
+        },
+        {   "id": 2,
+            "title": "The Shallow and the Deep, Long-Range Ecology Movment",
+            "description": "Den dype økologibevegelsen søker å bevare mangfold, samspill og likeverd blant alle former for liv, ikke bare å bekjempe forurensning og ressursutarming."
+
+        },
+        {   "id": 3,
+            "title": "Den Dypøkologiske Plattform",
+            "description": "Arne Næss' dypøkologiske plattform vektlegger uavhengig utfoldelse for mennesker og livsformer, samtidig som den fremmer bevaring av artsmangfold og rikdom."
+
+        },
+        {   "id": 4,
+            "title": "Stikkord innen den Dypøkologiske Bevegelsen",
+            "description": "Dypøkologi: Redusere forurensning, rettferdighet, dyrebeskyttelse, lokalt selvstyre, mangfold i naturen - komplekse økosystemer og avhengigheter."
+
+        },
+        {   "id": 5,
+            "title": "Poor People and Depp Ecology",
+            "description": "Noen hevder at fattige mennesker, som Mahatma Gandhi og befolkningen i Amazonas-jungelen, kan ha en dyp respekt for naturen og dyrelivet, til tross for sin kamp for overlevelse og grunnleggende behov."
+
+        },
+        {   "id": 6,
+            "title": "The Basic of Deep Ecology",
+            "description": "Deep Ecology er en miljøbevegelse som fokuserer på verdien av naturen og viktigheten av å ta vare på den for nåværende og fremtidige generasjoner."
+
+        }
+    ],
+
+    "books":
+    [
+        {   "id": 1,
+            "title": "test",
+            "description": "test"
+
+        },
+        {   "id": 2,
+            "title": "",
+            "description": ""
+
+        },
+        {   "id": 3,
+            "title": "",
+            "description": ""
+
+        },
+        {   "id": 4,
+            "title": "",
+            "description": ""
+
+        },
+        {   "id": 5,
+            "title": "",
+            "description": ""
+
+        },
+        {   "id": 6,
+            "title": "",
+            "description": ""
+
+        }
+    ]
+
+}
