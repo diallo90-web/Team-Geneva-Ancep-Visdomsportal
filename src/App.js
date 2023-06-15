@@ -11,9 +11,11 @@ import {
   VideoPage,
   WorkPage,
   ImageGalleryPage,
-  BookPage
+  BookPage,
+  ProgressPage
 
 } from "./pages"
+
 
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage/>}></Route>
             <Route path='/Navigasjon' element={<NavigationPage/>}></Route>
-            <Route path='/Fremgang' element={<HomePage/>}></Route>
+            <Route path='/Fremgang' element={<ProgressPage/>}></Route>
             <Route path='/Sok' element={<SearchPage/>}></Route>
             <Route path='/Navigasjon/Verk' element={<SubCategoryPage/>}></Route>
             <Route path='Navigasjon/Verk/Tekster' element ={<WorkPage/>}></Route>
