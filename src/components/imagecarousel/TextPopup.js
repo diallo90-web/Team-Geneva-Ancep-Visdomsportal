@@ -1,5 +1,5 @@
 import React from "react";
-import "../imagecarousel/ImagePopup.css";
+import "../imagecarousel/TextPopup.css";
 import { FaChevronLeft } from "react-icons/fa";
 
 

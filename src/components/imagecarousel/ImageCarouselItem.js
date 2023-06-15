@@ -6,7 +6,7 @@ import { testArray } from '../../assets/TextPopupArray';
 
 import Slider from 'react-slick';
 
-import TextPopup from './ImagePopup';
+import TextPopup from './TextPopup';
 
 // Imported images
 import aktivisten from "../../images/Aktivisten.png";
