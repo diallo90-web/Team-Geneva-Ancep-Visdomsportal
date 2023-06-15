@@ -1,6 +1,5 @@
 import "./BookPage.css"
 import WorkItem from "../../components/workitem/WorkItem"
-import bookImage from "../../images/bookdummy.jpeg"
 import card_data from "../../assets/card_data.json"
 import { bookImages } from "../../assets/imageHelper"
 

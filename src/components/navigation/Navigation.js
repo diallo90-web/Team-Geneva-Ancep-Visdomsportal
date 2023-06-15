@@ -3,7 +3,7 @@ import Book from "@mui/icons-material/MenuBookOutlined"
 import Sound from "@mui/icons-material/AudioFileOutlined"
 import Video from "@mui/icons-material/OndemandVideoOutlined"
 import Photo from "@mui/icons-material/InsertPhotoOutlined"
-import "./Test.css"
+import "./Navigation.css"
 import { useState } from "react"
 import { useMediaQuery } from "react-responsive";
 import { useNavigate} from "react-router-dom"

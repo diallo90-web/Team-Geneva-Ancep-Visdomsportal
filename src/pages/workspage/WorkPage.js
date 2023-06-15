@@ -1,7 +1,6 @@
 import WorkItem from "../../components/workitem/WorkItem"
 import "./WorkPage.css"
 import card_data from "../../assets/card_data.json"
-import { useState } from "react"
 import { Link } from "react-router-dom"
 import { FaChevronCircleLeft } from "react-icons/fa"
 import { workImages } from "../../assets/imageHelper"
