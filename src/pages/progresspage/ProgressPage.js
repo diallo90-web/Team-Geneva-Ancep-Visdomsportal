@@ -1,5 +1,4 @@
 import "./ProgressPage.css"
-import arneLeft from "../../images/arne-right2.png";
 import ProgressItem from "../../components/progressitem/ProgressItem";
 
 
