@@ -42,7 +42,7 @@ const HomePage = () => {
                 </div>
 
                 <div className='grid-container__text--one'>
-                    <Text title={titleImageOne} description={descriptionImageOne} btnText={btnTextImageOne}/>
+                    <Text title={titleImageOne} description={descriptionImageOne} btnText={btnTextImageOne} books={false}/>
                 </div>
 
                 <div className='grid-container__image--one'>
@@ -54,7 +54,7 @@ const HomePage = () => {
                 </div>
 
                 <div className='grid-container__text--two'>
-                    <Text title={titleImageTwo} description={descriptionImageTwo} btnText={btnTextImageTwo}/>
+                    <Text title={titleImageTwo} description={descriptionImageTwo} btnText={btnTextImageTwo} books={true}/>
                 </div>
             </div>
 

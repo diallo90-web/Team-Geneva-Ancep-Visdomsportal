@@ -11,6 +11,15 @@ const VideoPage = () =>{
     const videoOne = "https://www.youtube.com/watch?v=H9dtTsWxkAw"
     const videoTwo = "https://www.youtube.com/watch?v=_ApBt_wPTLQ"
     const videoThree = "https://www.youtube.com/watch?v=5m5tTwg2-IM"
+    
+    const titleOne = "På Tvers - Arne Næss 80 år"
+    const titleTwo = "Deep Ecology and Ecosophy"
+    const titleThree = "Tirich Mir-Ekspedisjonen"
+
+
+    const descriptionOne = "Om opplevelsen av å krysse tregrensen"
+    const descriptionTwo = "Arne Næss (1994) about the difference between deep ecology and ecosophy"
+    const descriptionThree = "Intervju med Arne Næss før Tirich Mir-ekspedisjonen (1964)"
 
     return(
         <div className="video-page">
@@ -22,17 +31,17 @@ const VideoPage = () =>{
 
             <div className="video-page__grid-container">
                 <div className="video-page__grid-item">
-                    <VideoBox title={"Title One"} description={"bla bla bla"} videoUrl={videoOne}/>
+                    <VideoBox title={titleOne} description={descriptionOne} videoUrl={videoOne}/>
 
                 </div>
 
                 <div className="video-page__grid-item">
-                    <VideoBox title={"Title Two"} description={"kra kra kra"} videoUrl={videoTwo}/>
+                    <VideoBox title={titleTwo} description={descriptionTwo} videoUrl={videoTwo}/>
 
                 </div>
 
                 <div className="video-page__grid-item">
-                    <VideoBox title={"Title Three"} description={"za za za"} videoUrl={videoThree}/>
+                    <VideoBox title={titleThree} description={descriptionThree} videoUrl={videoThree}/>
 
                 </div>
 
