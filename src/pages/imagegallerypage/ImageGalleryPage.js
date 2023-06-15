@@ -53,7 +53,7 @@ const ImageGalleryPage =() => {
       <Link className='image-gallery__back-arrow' to="/Navigasjon">
         <FaChevronCircleLeft/>
       </Link>
-      <h1 className='image-gallery__title'> Bilde Galleri</h1>
+      <h1 className='image-gallery__title'> Bildegalleri</h1>
       <div className='grid-container__gallery'>
         <div className='grid-item__gallery-img'>
           <ImageGalleryItem ImgUrl={myImage} />
