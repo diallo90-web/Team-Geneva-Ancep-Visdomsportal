@@ -2,11 +2,11 @@ import './ImageCarouselItem.css';
 
 import { useState } from "react";
 import { FaChevronRight, FaChevronLeft, FaChevronDown } from "react-icons/fa";
-import { testArray } from './TextPopupArray';
+import { testArray } from '../../assets/TextPopupArray';
 
 import Slider from 'react-slick';
 
-import ImagePopup from './ImagePopup';
+import TextPopup from './ImagePopup';
 
 // Imported images
 import aktivisten from "../../images/Aktivisten.png";
@@ -87,7 +87,7 @@ const CarouselItem = () => {
                 <FaChevronDown />
             </div>
             {showPopup && (
-                <ImagePopup text={popupText} onClose={closeImagePopup} />
+                <TextPopup text={popupText} onClose={closeImagePopup} />
             )}
         </div>
     );
