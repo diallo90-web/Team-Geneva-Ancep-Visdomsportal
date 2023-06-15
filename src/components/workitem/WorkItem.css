@@ -3,6 +3,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display: flex;
     width: 100%;
+    height: 90vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,8 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
     color: #C7B9A5;
-    font-size: calc(1.17em + 1em);
+    text-align: center;
+    font-size: 2rem;
     margin: 20px 0 0 0 ;
 }
 
@@ -24,6 +26,7 @@
     font-family: 'Lato', sans-serif;
     color: #6d6e71;
     line-height: 1.8;
+    text-align: center;
     font-size: 1rem;
     margin: 5px 0 0 0;
 }
@@ -33,19 +36,19 @@
     margin: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 45vh;
+    height: inherit;
     width: 100%;
-    background-size: cover;
+    background-size:cover;
     overflow: hidden;
     border-bottom:  2px solid #96608e; ;
 }
 
 .work-tiem__image{
     width: 100%;
-    height: 45vh;
+    height: 60vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    object-fit: cover;
+    object-fit:cover;
     transition: all 0.5s;
     /*
     border-radius: 10px;
@@ -67,17 +70,21 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    .work-item__wrapper{
+
+    }
     .work-item__image--wrapper{
         padding: 0;
         margin: 0;
-        height: 50vh;
+        height: inherit;
         width: 100%;
         background-size: cover;
         overflow: hidden;
     }
     .work-tiem__image{
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
@@ -85,6 +92,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .work-item__wrapper{
+        
+    }
     .work-item__image--wrapper{
         padding: 0;
         margin: 0;
@@ -105,6 +115,9 @@
 }
 
 @media screen and (max-width: 640px) {
+    .work-item__wrapper{
+        
+    }
 
     .work-item__image--wrapper{
         padding: 0;
@@ -126,10 +139,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    .work-item__wrapper{
+        
+    }
     .work-item__image--wrapper{
         padding: 0;
         margin: 0;
-        height: 50vh;
+        height: inherit;
         width: 100%;
         background-size: cover;
         overflow: hidden;
@@ -141,6 +157,10 @@
         border-top-right-radius: 10px;
         border-bottom: 3px solid #D7ACC1 ;
         object-fit: cover;
+    }
+
+    .work-item__h3{
+        font-size: 1.7rem;
     }
     
 }
