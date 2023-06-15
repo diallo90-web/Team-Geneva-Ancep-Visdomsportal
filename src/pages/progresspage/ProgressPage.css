@@ -1,0 +1,88 @@
+
+.progress-page__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: calc(2rem + 1rem);
+    color: #C7B9A5;
+}
+
+.progress-page__grid-container{
+    display: grid;
+    padding: 15px 15px 50px 15px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+}
+
+.progress-page__description{
+    grid-column: auto / span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 0 0 20px;
+}
+
+.progress-page__description-h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: calc(2rem);
+    color: #C7B9A5;
+}
+
+.progress-page__description-p{
+    font-family: 'Lato', sans-serif;
+    color: #6d6e71;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.progress-page__grid-item{
+    grid-column: auto / span 3;
+    border-radius: 30px;
+    height: 500px;
+}
+
+.progress-page__description-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .progress-page__grid-item{
+        grid-column: auto / span 6;
+    }
+
+    .progress-page__grid-item{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .progress-page__description{
+        grid-column: auto / span 12;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0 0 20px;
+    }
+
+    .progress-page__grid-item{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .progress-page__grid-item{
+        grid-column: auto / span 12;
+    }
+
+    .progress-page__description-p {
+        padding: 0 20px 0 20px;
+        margin: 20px 0 0 0;
+    }
+}
