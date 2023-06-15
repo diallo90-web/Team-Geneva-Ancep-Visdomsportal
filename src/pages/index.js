@@ -7,6 +7,7 @@ import SoundPage from "./soundpage/SoundPage";
 import VideoPage from "./videopage/VideoPage";
 import ImageGalleryPage from "./imagegallerypage/ImageGalleryPage";
 import BookPage from "./bookpage/BookPage";
+import ProgressPage from "./progresspage/ProgressPage";
 
 export {
     HomePage,
@@ -17,5 +18,6 @@ export {
     SoundPage,
     VideoPage,
     ImageGalleryPage,
-    BookPage
+    BookPage,
+    ProgressPage
 }
