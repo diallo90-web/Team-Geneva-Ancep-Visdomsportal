@@ -37,35 +37,55 @@
     "books":
     [
         {   "id": 1,
-            "title": "test",
-            "description": "test"
+            "title": "Innføring i Logikk og Metode",
+            "description": "bllalalalallalalalllalalalalalalala"
 
         },
         {   "id": 2,
-            "title": "",
+            "title": "Filosofiens Historie fra Renessanse til vår tid",
             "description": ""
 
         },
         {   "id": 3,
-            "title": "",
+            "title": "Vinger Sparebank 1851 - 1926",
             "description": ""
 
         },
         {   "id": 4,
-            "title": "",
+            "title": "Filosofiens Historie 2 fra Renessanse til vår egen tid",
             "description": ""
 
         },
         {   "id": 5,
-            "title": "",
+            "title": "Truth as conceived by those who are not professional philosophers ",
             "description": ""
 
         },
         {   "id": 6,
-            "title": "",
+            "title": "Tenkningens utvikling for nyere tid 2. utgave",
             "description": ""
 
+        },
+        {   "id": 7,
+            "title": "Filosofiske Notater - til Elementær logikk, tematikk og metodelære bind 1",
+            "description": ""
+
+        },
+        {   "id": 8,
+            "title": "Tenkningens utvikling for nyere tid 3. utgave",
+            "description": ""
+
+        },
+        {   "id": 9,
+            "title": "Oppgavesamling i Logikk",
+            "description": ""
+
+        },
+        {   "id": 10,
+            "title": "Noen verditeoretisk standpunkter med tilknyttet posthumt skrift av Odd Wickstrøm-Nilsen ",
+            "description": ""
         }
+        
     ]
 
 }
