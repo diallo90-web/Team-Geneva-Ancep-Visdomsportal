@@ -14,17 +14,42 @@
 
 ## for å skifte branch git checkout newfeature 
 
+## Dependencies 
+
+## @mui/material, @mui/icons-material, @emotion/styled, @emotion/react: 
+## npm install @mui/icons-material @mui/material @emotion/styled @emotion/react –force 
+
+## Icons:
+## npm install @material-ui/core –force
+## npm install @material-ui/icons –force
 
 
+## react-circular-menu:
+## npm install react-circular-menu –force
 
+## react-icons:
+## npm install react-icons
 
+## react-motion:
+## npm install --save react-motion –force
 
+## react-player:
+## npm install react-player –force
 
+## react-responsive:
+## npm install react-responsive --save –force
 
+## react-router-dom:
+## npm install react-router-dom
 
+## react-slick:
+## npm install --save react-slick –force
 
+## react-slick-carousel:
+## npm install --save react-slick-carousel –force
 
-
+## react-youtube:
+## npm install --save react-youtube –force
 
 
 
