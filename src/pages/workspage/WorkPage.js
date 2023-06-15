@@ -23,6 +23,7 @@ const WorkPage = () => {
           <div className="grid-item__work">
             <WorkItem
               key={workObject.id}
+              book={false}
               title={workObject.title}
               description={workObject.description}
               imageUrl={images[index].image}
